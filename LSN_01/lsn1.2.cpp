@@ -6,8 +6,11 @@ int main() {
   Random rng("../random/seed.in", "../random/primes32001.in", 1);
   
   // Testing the new methods
-  int nSamples = 100000;
+
+  int nSamples = 100000; //No. of samples to draw from each new distribution
+  //Output files for the generated values
   std::ofstream CLOut("test_CL.dat"), expOut("test_exp.dat");
+
   if (CLOut.is_open() && expOut.is_open()){
     for (int i = 0; i < nSamples; i++) {
       CLOut << rng.CauchyLorentz(0.5, 1.7) << std::endl;
@@ -20,10 +23,17 @@ int main() {
   }
 
   // Die throwing!
+
+  //How many values from the distributions we have to sum
   const int valuesOfN = 4;
-  int N[valuesOfN] = {1, 2, 10, 100}, realizations = 10000;
+  int N[valuesOfN] = {1, 2, 10, 100};
+  //Number of times we'll compute the sum
+  int realizations = 10000;
+  //Accumulators for the various sums
   double accumulatorStd, accumulatorExp, accumulatorCauchy;
+  //Output files for the sums
   std::ofstream stdDie("std_die.dat"), expDie("exp_die.dat"), cauchyDie("cauchy_die.dat");
+
   if(stdDie.is_open() && expDie.is_open() && cauchyDie.is_open()) {
     for (int i = 0; i < realizations; i++) {
       for (int j = 0; j < valuesOfN; j++) {
@@ -51,6 +61,9 @@ int main() {
     std::cerr << "I/O error when throwing dice, program terminates." << std::endl;
   }
 
+  stdDie.close();
+  expDie.close();
+  cauchyDie.close();
 
   return 0;
 }
