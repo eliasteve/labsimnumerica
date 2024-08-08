@@ -42,7 +42,6 @@ public:
   double CauchyLorentz(double mu, double gamma);
   // Method to generate a rabndom number distributed like the distribution from exercise 2.1
   double AR2_1();
-  double DiscreteRWStep(double a);
 };
 
 #endif // __Random__

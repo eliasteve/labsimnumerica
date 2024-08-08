@@ -22,6 +22,8 @@ Random :: Random(){}
 
 Random :: Random(std::string seedFile, std::string primesFile, int primesLineToRead) {
   // Initializes the generator reading seed and primes from supplied files.
+
+  //Open files for seed, primes
   std::ifstream seed(seedFile);
 
   if (!seed.is_open()) {
@@ -36,6 +38,7 @@ Random :: Random(std::string seedFile, std::string primesFile, int primesLineToR
     return;
   }
 
+  //Read seed
   int s[4];
   string checkWord; 
 
@@ -52,12 +55,14 @@ Random :: Random(std::string seedFile, std::string primesFile, int primesLineToR
   }
   seed.close();
 
+  //Read primes
   int p1=0, p2=0;
   for (int lineNumber = 0; lineNumber < primesLineToRead; lineNumber++) {
     primes >> p1 >> p2;
   }
   primes.close();
 
+  //Initialize generator
   SetRandom(s, p1, p2);
 
   std::cout << "Generator initialized with ";
