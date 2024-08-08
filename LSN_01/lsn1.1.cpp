@@ -61,9 +61,9 @@ int main() {
 
     meanAccumulator += blockMeanAccumulator;
     mean2Accumulator += pow(blockMeanAccumulator, 2);
-    outputMean << meanAccumulator/(i+1) - 0.5 << " ";
+    outputMean << meanAccumulator/(i+1) << " ";
     //Error will nan if i=0, which I'm fine with (it indicates an undefined sample variance and is handled wothout problems by C++ and Python for data analysis).
-    outputMean << sqrt((mean2Accumulator/(i+1) - 0.5 - pow(meanAccumulator/(i+1) - 0.5, 2))/i);
+    outputMean << sqrt((mean2Accumulator/(i+1) - pow(meanAccumulator/(i+1), 2))/i);
     outputMean << std::endl;
 
     // Compute variance and error for the current block, write it to file, update global accumulators
