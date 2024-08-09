@@ -22,7 +22,7 @@ int main() {
     std::cerr << "I/O error when testing, program continues." << std::endl;
   }
 
-  // Die throwing!
+  // Die throwing! (i.e. tests of the central limit theorem)
 
   //How many values from the distributions we have to sum
   const int valuesOfN = 4;

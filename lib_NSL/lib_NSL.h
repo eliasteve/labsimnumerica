@@ -47,6 +47,9 @@ pointAndAccept gen_next_point(
   double cubeHalfSide
 );
 
+//Function to handle computing the mean and error for a certain prohgressive
+//number of blocks, wrting the values to file and updating the relevant
+//accumulators
 void computeUpdateMeanAndError(int progressiveIndex, double blockValue, double &meanAccumulator, double &mean2Accumulator, std::ofstream &out);
 
 valAndAccept gen_next_point(
