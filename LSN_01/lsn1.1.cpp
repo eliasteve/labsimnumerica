@@ -90,7 +90,7 @@ int main() {
   }
 
   int intervalSubdivisions = 100; //Divisions of [0,1]
-  int chi2Trials = 100; //No. of times we'll compute the chi^2
+  int chi2Trials = 50000; //No. of times we'll compute the chi^2
   int valuesPerTrial = 10000; //Points per computation of chi^2
 
   //Stores the no. of observed values in each sub-interval
