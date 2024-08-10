@@ -7,8 +7,28 @@
 #include <functional>
 #include "../random/random.h"
 
+//point struct and related functions
+
+struct point {
+  double x;
+  double y;
+  double z;
+};
+
+std::ostream& operator<< (std::ostream& out, point p);
+
+point operator+ (const point& p1, const point& p2);
+
+double norm(point p);
+
+//Structs, functions for Metropolis algorithm
 struct valAndAccept {
   double val;
+  int accepted;
+};
+
+struct pointAndAccept {
+  point p;
   int accepted;
 };
 
@@ -22,20 +42,6 @@ valAndAccept gen_next_point(
   double move_width
 );
 
-struct point {
-  double x;
-  double y;
-  double z;
-};
-
-std::ostream& operator<< (std::ostream& out, point p);
-
-double norm(point p);
-
-struct pointAndAccept {
-  point p;
-  int accepted;
-};
 
 point propose_unif(point val, double cubeHalfSide, Random &rng);
 
@@ -47,11 +53,6 @@ pointAndAccept gen_next_point(
   double cubeHalfSide
 );
 
-//Function to handle computing the mean and error for a certain progressive
-//number of blocks, wrting the values to file and updating the relevant
-//accumulators
-void computeUpdateMeanAndError(int progressiveIndex, double blockValue, double &meanAccumulator, double &mean2Accumulator, std::ofstream &out);
-
 valAndAccept gen_next_point(
   double prev,
   std::function<double(double, double, double)> distro,
@@ -61,5 +62,10 @@ valAndAccept gen_next_point(
   double mu,
   double sigma
 );
+
+//Function to handle computing the mean and error for a certain progressive
+//number of blocks, wrting the values to file and updating the relevant
+//accumulators
+void computeUpdateMeanAndError(int progressiveIndex, double blockValue, double &meanAccumulator, double &mean2Accumulator, std::ofstream &out);
 
 #endif //__LIB_NSL__
