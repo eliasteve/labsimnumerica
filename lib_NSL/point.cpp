@@ -12,5 +12,13 @@ point operator+ (const point& p1, const point& p2) {
   return result;
 }
 
+point operator/ (const point& p, const double& d) {
+  point result;
+  result.x = p.x / d;
+  result.y = p.y / d;
+  result.z = p.z / d;
+  return result;
+}
+
 //Computes the norm^2 of a point
 double norm2(point p) {return pow(p.x, 2) + pow(p.y, 2) + pow(p.z, 2);}

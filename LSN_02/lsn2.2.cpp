@@ -30,7 +30,7 @@ int main() {
   int nBlocks = 100;           // Number of blocks for the Monte Carlo simulation
   int walkersPerBlock = 100;   // Number of walkers per block
   int nSteps = 100;            // Number of steps for each walker
-  double a = 1;                // Lattice constant for the discrete random walk (and
+  double a = 2;                // Lattice constant for the discrete random walk (and
                                // length of step for the continuous one)
 
   // Perform random walk with discrete steps
@@ -72,13 +72,20 @@ point discreteStep(Random& rng, double latticeConst) {
 
 // Function to perform a continuous step in the random walk
 point continuousStep(Random& rng, double stepLength) {
-  //To sample a point uniformly on S^2, need to sample phi uniformly in 
-  //[0, 2*pi) and theta in [0, pi] from the distribution sin(theta)/2.
-  //Sample sin(theta)/2 with the inverse comulatove distribution trick
-  double phi = rng.Rannyu(0, 2*M_PI), x = rng.Rannyu();
-  double theta = acos(1-2*x);
-  point step = {stepLength*sin(theta)*cos(phi), stepLength*sin(theta)*sin(phi), stepLength*cos(theta)}; //Random step from the values of theta, phi
-  return step;
+  point step = {0, 0, 0};
+  double norm;
+
+  //Using a simple accept-reject method: sample a point uniformly in the
+  //"unit cube", reject it if it's not inside the unit sphere; when you
+  //accept a point then rescale il so it's on the surface of the sphere
+  do {
+    step.x = rng.Rannyu(-1, 1);
+    step.y = rng.Rannyu(-1, 1);
+    step.z = rng.Rannyu(-1, 1);
+    norm = norm2(step);
+  } while (norm > 1);
+
+  return step/(sqrt(norm)/stepLength);
 }
 
 // Function to perform a random walk simulation
