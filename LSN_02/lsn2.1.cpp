@@ -2,7 +2,7 @@
 #include <fstream>
 #include <cmath>
 #include "../random/random.h"
-#include "../lib_NSL/lib_NSL.h"
+#include "../lib_NSL/misc.h"
 
 //Integrand function
 double integrand(double x) {

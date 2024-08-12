@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cmath>
 #include "../random/random.h"
+#include "../lib_NSL/misc.h"
 
 void fillWithZeros(double* array, int length){
   for (int i = 0; i < length; i++) {
@@ -56,25 +57,10 @@ int main() {
       blockVarianceAccumulator += pow(val-0.5, 2);
     }
 
-    // Compute mean and error for the current block, write it to file, update global accumulators
-    blockMeanAccumulator /= numbersPerBlock;
+    // Compute mean, variance and errors for the current block, write it to file, update global accumulators
+    computeUpdateMeanAndError(i, blockMeanAccumulator/numbersPerBlock, meanAccumulator, mean2Accumulator, outputMean);
 
-    meanAccumulator += blockMeanAccumulator;
-    mean2Accumulator += pow(blockMeanAccumulator, 2);
-    outputMean << meanAccumulator/(i+1) << " ";
-    //Error will nan if i=0, which I'm fine with (it indicates an undefined sample variance and is handled wothout problems by C++ and Python for data analysis).
-    outputMean << sqrt((mean2Accumulator/(i+1) - pow(meanAccumulator/(i+1), 2))/i);
-    outputMean << std::endl;
-
-    // Compute variance and error for the current block, write it to file, update global accumulators
-    blockVarianceAccumulator /= numbersPerBlock;
-
-    varianceAccumulator += blockVarianceAccumulator;
-    variance2Accumulator += pow(blockVarianceAccumulator, 2);
-    outputVariance << varianceAccumulator/(i+1) << " ";
-    //Error will nan if i=0, which I'm fine with (it indicates an undefined sample variance and is handled wothout problems by C++ and Python for data analysis).
-    outputVariance << sqrt((variance2Accumulator/(i+1) - pow(varianceAccumulator/(i+1), 2))/i);
-    outputVariance << std::endl;
+    computeUpdateMeanAndError(i, blockVarianceAccumulator/numbersPerBlock, varianceAccumulator, variance2Accumulator, outputVariance);
   }
   // Not striclty necessary as the destructor should take care of this when the stream objects come out of scope, but good practice nevertheless.
   outputMean.close();

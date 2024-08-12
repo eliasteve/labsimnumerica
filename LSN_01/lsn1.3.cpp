@@ -2,7 +2,7 @@
 #include <fstream>
 #include <cstdlib> // EXIT_FAILURE
 #include "../random/random.h"
-#include "../lib_NSL/lib_NSL.h"
+#include "../lib_NSL/misc.h"
 
 int throwNeedle(Random& rng, double L, double d);
 
