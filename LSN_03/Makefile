@@ -1,8 +1,12 @@
-lsn3.1 : lsn3.1.o ../random/random.o ../random/random.h
-	c++ -Wall --pedantic lsn3.1.o ../random/random.o -o lsn3.1.out
+CXX = c++
+CFLAGS = -Wall --pedantic -std=c++11
 
-../random/random.o : ../random/random.cpp ../random/random.h
-	c++ -Wall --pedantic -c ../random/random.cpp -o ../random/random.o
+lsn3.1 : lsn3.1.o ../random/random.o ../lib_NSL/misc.o
+	$(CXX) $(CFLAGS) $^ -o lsn3.1.out
 
-lsn3.1.o : lsn3.1.cpp
-	c++ -Wall --pedantic -c lsn3.1.cpp -o lsn3.1.o
+%.o: %.cpp %.h
+	$(CXX) $(CFLAGS) -c $< -o $@
+
+%.o: %.cpp 
+	$(CXX) $(CFLAGS) -c $< -o $@
+
