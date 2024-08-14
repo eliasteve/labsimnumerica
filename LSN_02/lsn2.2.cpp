@@ -30,7 +30,7 @@ int main() {
   int nBlocks = 100;           // Number of blocks for the Monte Carlo simulation
   int walkersPerBlock = 100;   // Number of walkers per block
   int nSteps = 100;            // Number of steps for each walker
-  double a = 2;                // Lattice constant for the discrete random walk (and
+  double a = 1;                // Lattice constant for the discrete random walk (and
                                // length of step for the continuous one)
 
   // Perform random walk with discrete steps
