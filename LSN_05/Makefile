@@ -1,8 +1,12 @@
-lsn5.1 : lsn5.1.o ../random/random.o ../random/random.h
-	c++ -std=c++11 -Wall --pedantic lsn5.1.o ../random/random.o -o lsn5.1.out
+CXX = c++
+CFLAGS = -Wall --pedantic -std=c++11
 
-../random/random.o : ../random/random.cpp ../random/random.h
-	c++ -std=c++11 -Wall --pedantic -c ../random/random.cpp -o ../random/random.o
+lsn5.1 : lsn5.1.o ../random/random.o ../lib_NSL/misc.o ../lib_NSL/metropolis.o ../lib_NSL/point.o
+	$(CXX) $(CFLAGS) $^ -o lsn5.1.out
 
-lsn5.1.o : lsn5.1.cpp
-	c++ -std=c++11 -Wall --pedantic -c lsn5.1.cpp -o lsn5.1.o
+%.o: %.cpp %.h
+	$(CXX) $(CFLAGS) -c $< -o $@
+
+%.o: %.cpp 
+	$(CXX) $(CFLAGS) -c $< -o $@
+

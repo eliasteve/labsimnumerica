@@ -7,6 +7,11 @@
 
 //Code to implement the Metropolis-Hastings algorithm
 
+struct valAndAccept {
+  double val;
+  int accepted;
+};
+
 struct pointAndAccept {
   point p;
   int accepted;
