@@ -7,18 +7,25 @@
 
 //Code to implement the Metropolis-Hastings algorithm
 
+//Struct to hold the generated scalar value for a Metropolis step
+//and wether the proposed value was accepted or not
 struct valAndAccept {
   double val;
   int accepted;
 };
 
+//Struct to hold the generated point (3d vector) value for a Metropolis step
+//and wether the proposed value was accepted or not
 struct pointAndAccept {
   point p;
   int accepted;
 };
 
+//Propose move from a uniform distribution for scalar Metropolis
 double propose_unif(double val, double radius, Random &rng);
 
+//Generates the next point in the Metropolis algorithm (for functions
+//of a scalar variable)
 valAndAccept gen_next_point(
   double prev,
   std::function<double(double)> distro,
@@ -28,8 +35,15 @@ valAndAccept gen_next_point(
 );
 
 
+//Propose move from a uniform distribution for point (3D vector) Metropolis
 point propose_unif(point val, double cubeHalfSide, Random &rng);
 
+//Propose move from a multivariate gaussian distribution for point
+//(3D vector) Metropolis
+point propose_gauss(point val, double width, Random &rng);
+
+//Generates the next point in the Metropolis algorithm (for functions
+//of a point (3D vector) variable)
 pointAndAccept gen_next_point(
   point prev,
   std::function<double(point)> distro,
@@ -38,6 +52,7 @@ pointAndAccept gen_next_point(
   double cubeHalfSide
 );
 
+//lezione 8
 valAndAccept gen_next_point(
   double prev,
   std::function<double(double, double, double)> distro,
