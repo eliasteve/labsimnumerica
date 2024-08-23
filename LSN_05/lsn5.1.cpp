@@ -8,14 +8,6 @@
 #include "../lib_NSL/point.h"
 
 
-//Exponential prob distribution for testing
-/*
-double prob_distr(double x) {
-  if (x < 0) return 0;
-  else return exp(-x);
-}
-*/
-
 //Probability density at a point p for the ground state
 double psiSqGS(point p);
 
@@ -43,34 +35,6 @@ int main() {
   int ptsPerBlock = 1000; //Points per block
 
   Random rng("../random/seed.in", "../random/primes32001.in", 1);
-
-  //Testing the Metropolis algorithm by sampling from an exponential distribution
-  /*
-  int N = 100000; //Points to draw
-  int accepted = 0; //Accepted points in the Metropolis sampling
-  valAndAccept valA = {4, 0}; //Initial value
-
-  for (int i = 0; i<burn_in_steps; i++) {
-    valA = gen_next_point(valA.val, &prob_distr, static_cast<double(*)(double, double, Random&)> (&propose_unif), rng, 1.5);
-  }
-
-  std::ofstream out("out_test.dat");
-  if (!out.is_open()) {
-    std::cerr << "I/O error opening file out_test.dat. Program terminates." << std::endl;
-    return -1;
-  }
-
-  for (int i = 0; i<N; i++) {
-    valA = gen_next_point(valA.val, &prob_distr, static_cast<double(*)(double, double, Random&)> (&propose_unif), rng, 1.5);
-    accepted += valA.accepted;
-    out << valA.val << std::endl;
-  }
-  std::cout << "Acceptance ratio for test " << double(accepted)/N << std::endl;
-
-  out.close();
-  */
-
-  // Sampling the orbital distributions
 
   double ar = 0; //Acceptance rate for Metropolis
 
@@ -165,7 +129,7 @@ int main() {
   return 0;
 }
 
-//Funtion to sample from the probability distribution of a given orbital
+//Function to sample from the probability distribution of a given orbital
 //and calculate the mean value of the radius.
 double sampleAndCalculate(
   Random &rng, //Random number generator
