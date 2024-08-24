@@ -40,32 +40,54 @@ valAndAccept gen_next_point(
   return res;
 }
 
-//exercise 8
-valAndAccept gen_next_point(
-  double prev,
-  std::function<double(double, double, double)> distro,
-  std::function<double(double, double, Random&)> propose,
-  Random &gen,
-  double move_width,
-  double mu,
-  double sigma
-) {
-  valAndAccept res;
-  double next = propose(prev, move_width, gen);
-  double r = distro(next, mu, sigma)/distro(prev, mu, sigma);
-  double random_val = gen.Rannyu();
 
-  if (random_val < r) {
-    res.val = next;
+//Generates the next point in the Metropolis algorithm for sampling an even
+//function with the same signature as the wavefunction of ex. 8.
+//Since the function we are going to sample is made of the superposition
+//of two bell curves, to mitigate the risk of only sampling one half of
+//the function when the bells get narrow, we add a flip (x -> -x) once every
+//set number of moves.
+valAndAccept gen_next_point(
+  double prev, //Previous point in the Markov chain
+  //Probability distribution function to sample from
+  std::function<double(double, double, double)> distro,
+  //Distribution function for move proposal
+  std::function<double(double, double, Random&)> propose,
+  Random &gen, //Random number generator
+  double move_width, //Width parameter for proposal distribution
+  double mu, //Parameter mu (e.g., center of the wavefunction)
+  double sigma, //Parameter sigma (e.g., spread of the wavefunction)
+  int &flipCount, //Counter for moves before a flip
+  int movesBeforeFlip //Number of moves before a flip is performed
+) {
+  //Struct to store the resulting point and acceptance status
+  valAndAccept res;
+
+  //Incorporate flips to sample both sides when sigma is small
+  if (flipCount == movesBeforeFlip) {
+    flipCount = 0;
+    res.val = -prev;
     res.accepted = 1;
   }
   else {
-    res.val = prev;
-    res.accepted = 0;
+    double next = propose(prev, move_width, gen); //Proposed next point
+    //Acceptance ratio
+    double r = distro(next, mu, sigma)/distro(prev, mu, sigma);
+    double random_val = gen.Rannyu(); //Generated random number
+
+    if (random_val < r) {
+      res.val = next;
+      res.accepted = 1;
+    }
+    else {
+      res.val = prev;
+      res.accepted = 0;
+    }
   }
 
   return res;
 }
+
 
 
 //Propose move from a uniform distribution for point (3D vector) Metropolis

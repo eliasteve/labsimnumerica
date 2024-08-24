@@ -52,7 +52,8 @@ pointAndAccept gen_next_point(
   double cubeHalfSide
 );
 
-//lezione 8
+//Generates the next point in the Metropolis algorithm for sampling a
+//function with the same signature as the wavefunction of ex. 8
 valAndAccept gen_next_point(
   double prev,
   std::function<double(double, double, double)> distro,
@@ -60,7 +61,9 @@ valAndAccept gen_next_point(
   Random &gen,
   double move_width,
   double mu,
-  double sigma
+  double sigma,
+  int &flipCount,
+  int movesBeforeFlip
 );
 
 

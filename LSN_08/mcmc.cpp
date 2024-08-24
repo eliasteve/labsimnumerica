@@ -36,6 +36,8 @@ meanErrorAccept computeEnergy(
 ) {
 
   int accepted = 0; //Counter for accepted moves
+  int flipCount = 0; //Counter for moves before a flip move
+  int movesBeforeFlip = 30; //How many "standard" moves before a flip
   int periodForWidthAdj = 20; //Steps between width adjustments
   double blockAccumulator = 0; //Accumulator for block value
   double meanAccumulator = 0; //Global accumulator for mean
@@ -60,7 +62,7 @@ meanErrorAccept computeEnergy(
   for (int i = 0; i < burn_in_steps / periodForWidthAdj; i++) {
     accepted = 0;
     for (int j = 0; j < periodForWidthAdj; j++) {
-      v = gen_next_point(v.val, prob_distr, propose, rng, width, mu, sigma);
+      v = gen_next_point(v.val, prob_distr, propose, rng, width, mu, sigma, flipCount, movesBeforeFlip);
       accepted += v.accepted;
     }
     //Adjust proposal width based on acceptance ratio
@@ -72,7 +74,7 @@ meanErrorAccept computeEnergy(
   for (int i = 0; i < nBlocks; i++) {
     blockAccumulator = 0;
     for (int j = 0; j < ptsPerBlock; j++) {
-      v = gen_next_point(v.val, prob_distr, propose, rng, width, mu, sigma);
+      v = gen_next_point(v.val, prob_distr, propose, rng, width, mu, sigma, flipCount, movesBeforeFlip);
       accepted += v.accepted;
       if(filename != "") {
         outf << v.val << " " << localEnergy(v.val, mu, sigma) << std::endl;
