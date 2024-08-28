@@ -130,9 +130,9 @@ double stableLocalEnergy(
   double argminus = pow((x-mu)/sigma, 2), argplus = pow((x+mu)/sigma, 2);
   double argmax = std::max(-0.5*argplus, -0.5*argminus);
   double sumexp = exp(-0.5*argplus - argmax) + exp(-0.5*argminus - argmax);
-  double logprobplus = -0.5*argplus -2*log(sigma) - argmax - log(sumexp);
-  double logprobminus = -0.5*argminus -2*log(sigma) - argmax - log(sumexp);
-  return -0.5 * ( exp(logprobplus) * (argplus-1) + exp(logprobminus) * (argminus-1) ) + pow(x, 4) - 5./2.*pow(x, 2);
+  double logprobplus = -0.5*argplus  - argmax - log(sumexp);
+  double logprobminus = -0.5*argminus - argmax - log(sumexp);
+  return -0.5/pow(sigma, 2) * ( exp(logprobplus) * (argplus-1) + exp(logprobminus) * (argminus-1) ) + pow(x, 4) - 5./2.*pow(x, 2);
 }
 
 

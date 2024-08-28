@@ -39,31 +39,54 @@ int main() {
   //calculation (will be adjusted during equilibration to get an about 50%
   //acceptance ratio)
   double energyStepWidth = 2;
-  //Initial value for the 
+  //Initial width for the proposal distribution for parameter calculation.
+  //Is adjusted dynamically during sampling, since as we're sampling from 
+  //different distribution as beta changes we do not care as much about
+  //detailed balanca.
   double parametersStepWidth = 0.5;
+  //Acceptance fraction for parameters calculation
   double acceptanceFraction = 0;
+  //Minimum value for beta
   double beta_min = 5;
-  double beta_max = 60;
-  double exponent = 0.90;
+  //maximum vslue for beta
+  double beta_max = 110;
+  //Exponent in the scaling law for beta,
+  //beta_n = K(n-1)^exponent + beta_min
+  double exponent = 1.2;
+  //Steps in the annealing process
   int nSteps = 100;
+  //Generated values of the parameters per annealing step
   int pointsPerStep = 100;
+  //Factor in the scaling law for beta. Fixed so beta_nSteps = beta_max
   double K = (beta_max - beta_min)/pow(nSteps-1, exponent);
+  //Acceoted points in every simulated annealing step
   int accepted = 0;
+  //Accepted points between width adjustments
   int accepted2 = 0;
+  //Counts the values generated between width adjustments
   int counterForWidthAdjustment = 0;
+  //Perform a width adjustment after this many moves
   int widthAdjustmentPeriod = 20;
+  //Output files for the values of the parameters, the energies and beta
   std::ofstream outfParameters, outfEnergies, outfBetas;
 
   //Construct the the annealing schedule
 
+  //One per steps plus a fistitious 1st step which fixes the initial
+  //values for the parameters
   SAStep SASchedule[nSteps+1];
-  //Use a fictitious first step to fix the initial values
+  //Vectors which will hold the generated parameters and energies in
+  //each step.
   std::vector<double> mus = {0.}, sigmas = {1.};
   std::vector<meanErrorAccept> energy = {val};
+  //Useful for resizing the vectors in the 1st (actual) step
   SASchedule[0].n = 1;
   SASchedule[0].beta = beta_min; //Could also leave this uninitialized
 
-  //Initialize the other steps
+  //Initialize the other steps. The numbers of blocks per steps changes
+  //dynamically in order to compute the energy with increasingly smaller
+  //uncertainties as the variability in the parameters decreases. The
+  //actual change schedule was chosen empirically
   for(int i = 1; i < nSteps+1; i++) {
     SASchedule[i].n = pointsPerStep;
     SASchedule[i].beta = K*pow(i-1, exponent) + beta_min;
@@ -97,7 +120,8 @@ int main() {
     for(int i = 1; i < SASchedule[step].n; i++) {
       generateNewParameters(mus[i-1], sigmas[i-1], energy[i-1], mus[i], sigmas[i], energy[i], accepted, accepted2, parametersStepWidth, energyStepWidth, SASchedule[step].beta, SASchedule[step].nBlocks, rng);
 
-      //On-the-fly width adjustment stuff
+      //Adjust the width of the distribution for parameter move proposal
+      //dynamically in order to obtain an acceptance ratio close to 50%
       counterForWidthAdjustment++;
       if (counterForWidthAdjustment%widthAdjustmentPeriod == 0) {
         acceptanceFraction = double(accepted)/widthAdjustmentPeriod;
@@ -128,6 +152,8 @@ int main() {
   }
   outfBetas.close();
 
+  //Final calculation of the energy, to write the sampled point of the
+  //wavefunction to file
   val = computeEnergy(
     rng,
     300,

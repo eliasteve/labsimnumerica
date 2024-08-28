@@ -70,6 +70,7 @@ valAndAccept gen_next_point(
     res.accepted = 1;
   }
   else {
+    flipCount++;
     double next = propose(prev, move_width, gen); //Proposed next point
     //Acceptance ratio
     double r = distro(next, mu, sigma)/distro(prev, mu, sigma);
