@@ -166,7 +166,8 @@ int main() {
     10*(*(sigmas.rbegin())),
     *(mus.rbegin()),
     *(sigmas.rbegin()),
-    "final_energy_distro.dat"
+    "final_distro.dat",
+    "final_energy.dat"
   );
   std::cout << "Parameters: mu " << *(mus.rbegin()) << ", sigma " << *(sigmas.rbegin()) << std::endl;
   std::cout << "energy = " << val.mean << " ± " << val.error << ", acc = " << val.acceptanceRatio << std::endl << std::endl;
@@ -240,6 +241,7 @@ void generateNewParameters(
     sigma,
     mu,
     sigma,
+    "",
     ""
   );
 

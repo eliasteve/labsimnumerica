@@ -31,8 +31,12 @@ meanErrorAccept computeEnergy(
   double width,
   double mu, //Parameter mu (e.g., center of the wavefunction)
   double sigma, //Parameter sigma (e.g., spread of the wavefunction)
-  //Filename for saving data, empty string disables saving
-  std::string filename 
+  //Filename for saving points sampled from the distribution, empty string
+  //disables saving
+  std::string filenameDistro,
+  //Filename for saving the progressive values of the energy as a function
+  //of the block: empty string disables saving
+  std::string filenameEnergy
 ) {
 
   int accepted = 0; //Counter for accepted moves
@@ -43,21 +47,33 @@ meanErrorAccept computeEnergy(
   double meanAccumulator = 0; //Global accumulator for mean
   double mean2Accumulator = 0; //Global accumulator for energy
   double blockMean = 0; //Block mean
+  double progressiveMean = 0; //Progressive mean
   //Stores value and acceptance status, initialize it to the initial value
   valAndAccept v = {initial_point, 0};
   meanErrorAccept res = {}; //Stores result (mean, error, acceptance ratio)
 
-  std::ofstream outf;
-  if(filename != "") {
-    outf.open(filename);
-    if(!outf.is_open()) {
+  std::ofstream outfd;
+  if(filenameDistro != "") {
+    outfd.open(filenameDistro);
+    if(!outfd.is_open()) {
       std::cerr << "I/O error. Program terminates" << std::endl;
       exit(EXIT_FAILURE);
     }
-    outf << mu << std::endl << sigma << std::endl;
-    outf << nBlocks << std::endl << ptsPerBlock << std::endl;
+    //File header
+    outfd << "mu " << mu << std::endl << "sigma " << sigma << std::endl;
+    outfd << "nBlocks " << nBlocks << std::endl;
+    outfd << "ptsPerblock " << ptsPerBlock << std::endl;
   }
 
+  std::ofstream outfe;
+  if(filenameEnergy != "") {
+    outfe.open(filenameEnergy);
+    if(!outfe.is_open()) {
+      std::cerr << "I/O error. Program terminates" << std::endl;
+      exit(EXIT_FAILURE);
+    }
+    outfe << "Energy Error" << std::endl; //File header
+  }
   //Burn-in phase: also adjust width to achieve desired acceptance ratio
   for (int i = 0; i < burn_in_steps / periodForWidthAdj; i++) {
     accepted = 0;
@@ -76,14 +92,17 @@ meanErrorAccept computeEnergy(
     for (int j = 0; j < ptsPerBlock; j++) {
       v = gen_next_point(v.val, prob_distr, propose, rng, width, mu, sigma, flipCount, movesBeforeFlip);
       accepted += v.accepted;
-      if(filename != "") {
-        outf << v.val << " " << localEnergy(v.val, mu, sigma) << std::endl;
+      if(filenameDistro != "") {
+        outfd << v.val << std::endl;
       }
       blockAccumulator += localEnergy(v.val, mu, sigma);
     }
     blockMean = blockAccumulator / ptsPerBlock;
     meanAccumulator += blockMean;
     mean2Accumulator += pow(blockMean, 2);
+    progressiveMean = meanAccumulator/(i+1);
+    if(filenameEnergy != "") 
+      outfe << progressiveMean << " " << sqrt((mean2Accumulator/(i+1) - pow(progressiveMean, 2))/i) << std::endl;
   }
 
   //Final calculations: mean energy, statistical error, and acceptance ratio
@@ -91,7 +110,8 @@ meanErrorAccept computeEnergy(
   res.error = sqrt((mean2Accumulator / nBlocks - pow(res.mean, 2)) / (nBlocks - 1));
   res.acceptanceRatio = double(accepted) / (nBlocks * ptsPerBlock);
 
-  if (filename != "") outf.close();
+  if (filenameDistro != "") outfd.close();
+  if (filenameEnergy!= "") outfe.close();
 
   return res; //Return result (mean energy, error, and acceptance ratio)
 }

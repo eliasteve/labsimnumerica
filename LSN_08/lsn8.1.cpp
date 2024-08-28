@@ -17,6 +17,7 @@ int main() {
     std::cerr << "I/O error!" << std::endl;
     exit(EXIT_FAILURE);
   }
+  out << "mu sigma energy_naive error_naive energy_stable error_stable" << std::endl;
 
   double mu = 1, sigma = 0.5; //Wavefunction and local energy parameters
   out << mu << " " << sigma << " ";
@@ -33,6 +34,7 @@ int main() {
     1,
     mu,
     sigma,
+    "",
     ""
   );
 
@@ -51,6 +53,7 @@ int main() {
     1,
     mu,
     sigma,
+    "",
     ""
   );
 

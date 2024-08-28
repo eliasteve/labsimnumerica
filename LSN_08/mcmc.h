@@ -31,7 +31,8 @@ meanErrorAccept computeEnergy(
   double width,
   double mu,
   double sigma,
-  std::string filename
+  std::string filename,
+  std::string filenameEnergy
 );
 
 //Computes the squared absolute value of the wavefunction
