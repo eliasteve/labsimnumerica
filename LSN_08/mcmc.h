@@ -31,7 +31,7 @@ meanErrorAccept computeEnergy(
   double width,
   double mu,
   double sigma,
-  std::string filename,
+  std::string filenameDistro,
   std::string filenameEnergy
 );
 
