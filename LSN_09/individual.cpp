@@ -27,7 +27,7 @@ void checkConstraintAndTerminate(individual& target) {
   }
 }
 
-bool operator<(const individual ind1, const individual ind2) {
+bool operator<(const individual &ind1, const individual &ind2) {
   return ind1.fitness < ind2.fitness;
 }
 

@@ -18,7 +18,7 @@ int selectionFunction(int, double);
 void crossover(individual&, individual&, individual&, individual&, Random&, arma::mat&);
 void copyWithOtherParentOrder(individual&, individual&, int);
 
-bool operator<(const individual, const individual);
+bool operator<(const individual&, const individual&);
 //bool operator==(const individual, const individual);
 //bool operator>(const individual, const individual);
 
