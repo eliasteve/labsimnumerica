@@ -5,7 +5,6 @@
 #include "../random/random.h"
 #include <cmath>
 #include <cstdlib> // exit()
-#include <iomanip> // setprecision()
 
 
 //Run one iteration of random search
@@ -37,7 +36,6 @@ void computeDistanceLUT(int, arma::mat&, arma::mat&);
 int main() {
   Random rng("../random/seed.in", "../random/primes32001.in", 2);
 
-  //std::cout << std::setprecision(17); 
   int nCities = 34; //number of cities
   //Number of individual in the population of solutions
   int populationSize = 100;
