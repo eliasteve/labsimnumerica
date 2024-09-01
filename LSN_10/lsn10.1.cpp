@@ -82,23 +82,62 @@ int main(int argc, char* argv[]) {
 
 
 
-void optimizeGeneticAlgo(std::vector<individual>& population, Random& rng, arma::mat& distanceLUT, int nSteps, int maxTimesUnchanged, int migrationPeriod, int size, int rank) {
-  double bestFitness = 0, bestFitnessPrev = sortPopulation(population);
+//Produce a solution to the travelling salesman problem using genetic search
+//(parallelized genetic algorithm + migration)
+void optimizeGeneticAlgo(
+  std::vector<individual>& population, //Initial population of paths
+  Random& rng, //Random number generator
+  arma::mat& distanceLUT, //Lookup table for distance of pairs of cities
+  int nSteps, //Max number of steps to perform
+  //After this many steps without improvement, the node sets wantToExit to
+  //true (see below)
+  int maxTimesUnchanged,
+  //ater this many steps, execute a migration
+  int migrationPeriod,
+  //MPI parameters
+  int size, //Number of nodes
+  int rank //Label of node
+) {
+  //Will store the best fitness of the current iteration
+  double bestFitness = 0; 
+  double bestFitnessPrev = sortPopulation(population); //Best fitness of the
+                                                       //previous iteration
+
+  //With migrations, all nodes need to exit simultaneously (otherwise a
+  //node might send an individual to or receive it from a node which has 
+  //exited already, and the program hangs). The exit policy is this: after
+  //maxTimesUnchanged iteration without improvement, a node sets wantToExit
+  //to true. When all nodes have done so, exit gets set to true, and all 
+  //the nodes exit simultaneously.
   bool wantToExit = false, exit = false;
-  int i, timesUnchanged = 0;
+  //Counter for iterations. Need to access it from outside of its for loop
+  //to print the number of iteration once we're done with the algorithm
+  int i;
+  //Counts how many iterations have passed without an improvement in fitness
+  int timesUnchanged = 0;
+
+  //Output file for the node (for legibility, so the nodes don't all try to
+  //write to stdout).
   std::ofstream outf("node" + std::to_string(rank) + "_output.txt");
+  //Output file for debigging the cose for synchronized exit
   //std::ofstream debugExit("exitlog_node" + std::to_string(rank));
+
   if (rank == 0) writeIndividual(population[0], "best_initial_individual.dat");
   for (i = 0; (i < nSteps) && !exit; i++) {
     population = geneticAlgoIteration(population, rng, distanceLUT);
+
+    //Migration
     if(i % migrationPeriod == migrationPeriod-1) {
       outf << "Iteration " << i << ": exchanging individuals. Best fitness before the exchange: ";
       outf << sortPopulation(population) << std::endl;
       migrate(population, size, rank);
       outf << "Best individual received has fitness " << population[population.size()-1].fitness << std::endl;
     }
+
     bestFitness = sortPopulation(population);
     //outf << "best " << bestFitness << ", prev " << bestFitnessPrev << std::endl;
+
+    //Synchronized exit code
     if(!(bestFitness < bestFitnessPrev)) {
       timesUnchanged++;
     }
@@ -108,6 +147,8 @@ void optimizeGeneticAlgo(std::vector<individual>& population, Random& rng, arma:
       bestFitnessPrev = bestFitness;
     }
     wantToExit = (timesUnchanged > maxTimesUnchanged);
+    //After this call, exit is true on all nodes if wantToExit is true on
+    //all nodes, false otherwise
     MPI_Allreduce(&wantToExit, &exit, 1, MPI_C_BOOL, MPI_LAND, MPI_COMM_WORLD);
     //debugExit << "Iteration " << i << ": wantToExit is " << wantToExit << ", exit is " << exit << std::endl;
   }
@@ -118,15 +159,40 @@ void optimizeGeneticAlgo(std::vector<individual>& population, Random& rng, arma:
 
 
 
-void optimizeGeneticAlgoNoMigr(std::vector<individual>& population, Random& rng, arma::mat& distanceLUT, int nSteps, int maxTimesUnchanged, int size, int rank) {
-  double bestFitness = 0, bestFitnessPrev = sortPopulation(population);
-  int i, timesUnchanged = 0;
+//Run a genetic algorithm in order to find the solution to the travelling
+//salesman problem
+void optimizeGeneticAlgoNoMigr(
+  std::vector<individual>& population, //Initlal population of paths
+  Random& rng, //Random number generator
+  arma::mat& distanceLUT, //Lookup table for distance of pairs of cities
+  int nSteps, //Max number of steps to perform
+  //After this many steps without an improvement in fitness, stop the
+  //algorithm
+  int maxTimesUnchanged,
+  //Filename for saving the mean fitness of the best half of paths. Empty
+  //string disables saving
+  int size, //Number of nodes
+  int rank //Label of node
+) {
+  //Will store the best fitness of the current iteration
+  double bestFitness = 0; 
+  double bestFitnessPrev = sortPopulation(population); //Best fitness of the
+                                                       //previous iteration
+  //Counter for iterations. Need to access it from outside of its for loop
+  //to print the number of iteration once we're done with the algorithm
+  int i;
+  //Counts how many iterations have passed without an improvement in fitness
+  int timesUnchanged = 0;
+  //Output file for the node (for legibility, so the nodes don't all try to
+  //write to stdout).
   std::ofstream outf("node" + std::to_string(rank) + "_output_NM.txt");
+
   if (rank == 0) writeIndividual(population[0], "best_initial_individual_NM.dat");
   for (i = 0; (i < nSteps) && (timesUnchanged < maxTimesUnchanged); i++) {
     population = geneticAlgoIteration(population, rng, distanceLUT);
     bestFitness = sortPopulation(population);
-    //outf << "best " << bestFitness << ", prev " << bestFitnessPrev << std::endl;
+
+    //Check if there have been improvements
     if(!(bestFitness < bestFitnessPrev)) {
       timesUnchanged++;
     }
@@ -142,8 +208,12 @@ void optimizeGeneticAlgoNoMigr(std::vector<individual>& population, Random& rng,
 
 
 
-arma::uvec generateExchangeList(int size, int rank) {
-  arma::uvec exchangeList(size, arma::fill::zeros);
+//Generate an exchange list for migration of individuals in genetic search
+arma::uvec generateExchangeList(
+  int size, //Number of nodes
+  int rank //Label of node
+) {
+  arma::uvec exchangeList(size, arma::fill::zeros); //Exchange list
   //Generate the list of exchanges as a permitation of numbers from 0 to size-1. Each node sends to the one after it in the array, and receives from the one before it.
   if (rank == 0) exchangeList = arma::randperm(size);
   MPI_Bcast(&exchangeList[0], size, MPI_INTEGER8, 0, MPI_COMM_WORLD);
@@ -152,6 +222,7 @@ arma::uvec generateExchangeList(int size, int rank) {
 
 
 
+//Perform migration iwhile running a genetic search
 void migrate(std::vector<individual>& population, int size, int rank) {
   //THE FUNCTION ASSUMES THE POPULATION HAS BEEN ALREADY SORTED
   //Probably comment this check out if your program has been tested and found to work in order to gain some speed.
@@ -160,10 +231,15 @@ void migrate(std::vector<individual>& population, int size, int rank) {
     exit(EXIT_FAILURE);
   }
 
-  int sendTo, receiveFrom, nIndividuals = 5;
+  int sendTo; //Rank of the node to send to
+  int receiveFrom; //Rank of the node to receive from
+  int nIndividuals = 5; //Number of individuals to be exchanged
+  //Variables needed for communication with MPI
   MPI_Request req;
-  MPI_Status stat;
+  MPI_Status stat; 
+  //Exchange list, determines who each node sends to and receives from
   arma::uvec exchangeList = generateExchangeList(size, rank);
+
   for (int i = 0; i < size; i++) {
     if(rank == exchangeList[i]) {
       sendTo = exchangeList[(i+1)%size];
