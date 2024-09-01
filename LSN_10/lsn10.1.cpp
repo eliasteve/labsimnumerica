@@ -7,14 +7,22 @@
 #include "mpi.h"
 
 
+//Produce a solution to the travelling salesman problem using genetic search
+//(parallelized genetic algorithm + migration)
 void optimizeGeneticAlgo(std::vector<individual>&, Random&, arma::mat&, int, int, int, int, int);
+//Run a genetic algorithm in order to find the solution to the travelling
+//salesman problem
 void optimizeGeneticAlgoNoMigr(std::vector<individual>&, Random&, arma::mat&, int, int, int, int);
+//Generate an exchange list for migration of individuals in genetic search
 arma::uvec generateExchangeList(int, int);
+//Perform migration while running a genetic search
 void migrate(std::vector<individual>&, int, int);
+//Sends an individual to another node
 void sendIndividual(individual&, int, MPI_Request&, int, int);
+//Receives an individual from another node
 void receiveIndividual(individual&, int, MPI_Status&, int, int);
+//Find the best individual among the fittest in each node
 individual bestOverallIndividual(std::vector<individual>&, int, int);
-//void createIndividualMPIDatatype(MPI_Datatype&, int);
 
 int main(int argc, char* argv[]) {
   int size, rank;
@@ -222,8 +230,13 @@ arma::uvec generateExchangeList(
 
 
 
-//Perform migration iwhile running a genetic search
-void migrate(std::vector<individual>& population, int size, int rank) {
+//Perform migration while running a genetic search
+void migrate(
+  std::vector<individual>& population, //Population of individuals in the
+                                       //node
+  int size, //Number of nodes
+  int rank //Label of node
+) {
   //THE FUNCTION ASSUMES THE POPULATION HAS BEEN ALREADY SORTED
   //Probably comment this check out if your program has been tested and found to work in order to gain some speed.
   if(!std::is_sorted(population.begin(), population.end())) {
@@ -246,56 +259,54 @@ void migrate(std::vector<individual>& population, int size, int rank) {
       receiveFrom = exchangeList[(size+i-1)%size]; //Add size to prevent index before modulus from being negative.
     }
   }
-  
-  /*
-  std::ofstream outf("out_" + std::to_string(rank) + ".txt");
-  outf << "Exchange list: " << exchangeList.t() << std::endl;
-  outf << "Node " << rank << " sends to " << sendTo << ", receives from " << receiveFrom << std::endl;
-  */
-  /*
-  for (int i = 0; i < population.size(); i++) {
-    outf << "Individual number " << i+1 << ":" << std::endl;
-    outf << population[i].path << std::endl;
-    outf << "Fitness " << population[i].fitness << std::endl;
-  }
-  */
-
+ 
+  //Replace the nIndividual least fit individuals in the population of the
+  //receiving node with the fittest in the sending node.
   for(int i = 0; i < nIndividuals; i++) {
-    //Comm ID is rank of sender for path, size+rank of sender for fitness
-    /*
-    outf << "Sending individual with path" << std::endl;
-    outf << population[i].path << std::endl;
-    outf << "and fitness " << population[i].fitness << std::endl;
-    */
     sendIndividual(population[i], sendTo, req, size, rank);
     receiveIndividual(population[population.size()-1-i], receiveFrom, stat, size, rank);
-    /*
-    outf << "Received individual with path" << std::endl;
-    outf << population[population.size()-1-i].path << std::endl;
-    outf << "and fitness " << population[population.size()-1-i].fitness << std::endl;
-    */
   }
-
-  //outf.close();
 }
 
 
 
-void sendIndividual(individual& ind, int toNode, MPI_Request& req, int size, int rank) {
+//Sends an individual to another node
+void sendIndividual(
+  individual& ind, //Individual to be sent
+  int toNode, //Destination node
+  MPI_Request& req, //Request, for sending via MPI
+  int size, //Number of nodes
+  int rank //Label of node
+) {
+  //Comm ID is rank of sender for path, size+rank of sender for fitness
   MPI_Isend(&ind.path[0], ind.path.n_elem, MPI_INTEGER8, toNode, rank, MPI_COMM_WORLD, &req);
   MPI_Isend(&ind.fitness, 1, MPI_REAL8, toNode, size+rank, MPI_COMM_WORLD, &req);
 }
 
 
 
-void receiveIndividual(individual& ind, int receiveFrom, MPI_Status& status, int size, int rank) {
+//Receives an individual from another node
+void receiveIndividual(
+  individual& ind, //Output: received individual
+  int receiveFrom, //Sender node
+  MPI_Status& status, //Status, for receiving via MPI
+  int size, //Number of nodes
+  int rank //Label of node
+) {
+  //Comm ID is rank of sender for path, size+rank of sender for fitness
   MPI_Recv(&ind.path[0], ind.path.n_elem, MPI_INTEGER8, receiveFrom, receiveFrom, MPI_COMM_WORLD, &status);
   MPI_Recv(&ind.fitness, 1, MPI_REAL8, receiveFrom, size+receiveFrom, MPI_COMM_WORLD, &status);
 }
 
 
 
-individual bestOverallIndividual(std::vector<individual>& population, int size, int rank) {
+//Find the best individual among the fittest in each node
+individual bestOverallIndividual(
+  std::vector<individual>& population, //Population of individuals in the
+                                       //current node
+  int size, //Number of nodes
+  int rank //Label of node
+) {
   //THE FUNCTION ASSUMES THE POPULATION HAS BEEN ALREADY SORTED
   //Probably comment this check out if your program has been tested and found to work in order to gain some speed.
   if(!std::is_sorted(population.begin(), population.end())) {
@@ -303,15 +314,22 @@ individual bestOverallIndividual(std::vector<individual>& population, int size, 
     exit(EXIT_FAILURE);
   }
 
+  //MPI variables, for sending/receiving
   MPI_Request req;
   MPI_Status status;
+
+  //Node 0 receives the fittest individuals for all nodes and compares them
+  //to find the fittest overall
   if (rank != 0) {
     sendIndividual(population[0], 0, req, size, rank);
   }
 
   if (rank == 0) {
+    //Fittest individuals for every node
     std::vector<individual> candidates(size);
-    individual tmp = population[0]; //Initialize this to some value so we receive on memory that's allocated
+    //Variable to receive individuals via MPI. Initialize it to some value
+    //so we receive on memory that's allocated
+    individual tmp = population[0];
     candidates[0] = population[0];
     for (int i = 1; i < size; i++) {
       receiveIndividual(tmp, i, status, size, rank);

@@ -176,19 +176,19 @@ int main() {
 //Run a genetic algorithm in order to find the solution to the travelling
 //salesman problem
 void optimizeGeneticAlgo(
-    std::vector<individual>& population, //Initlal population of paths
-    Random& rng, //Random number generator
-    arma::mat& distanceLUT, //Lookup table for distance of pairs of cities
-    int nSteps, //Max number of steps to perform
-    //After this many steps without an improvement in fitness, stop the
-    //algorithm
-    int maxTimesUnchanged,
-    //Filename for saving the mean fitness of the best half of paths. Empty
-    //string disables saving
-    std::string filenameMean, 
-    //Filename for saving the best fitness per iteration. Empty string 
-    //disables saving
-    std::string filenameBest
+  std::vector<individual>& population, //Initlal population of paths
+  Random& rng, //Random number generator
+  arma::mat& distanceLUT, //Lookup table for distance of pairs of cities
+  int nSteps, //Max number of steps to perform
+  //After this many steps without an improvement in fitness, stop the
+  //algorithm
+  int maxTimesUnchanged,
+  //Filename for saving the mean fitness of the best half of paths. Empty
+  //string disables saving
+  std::string filenameMean, 
+  //Filename for saving the best fitness per iteration. Empty string 
+  //disables saving
+  std::string filenameBest
 ) {
   //Will store the best fitness of the current iteration
   double bestFitness = 0; 
