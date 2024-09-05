@@ -1,0 +1,411 @@
+Iteration 1: improved fitness: 444.225->433.894
+Iteration 2: improved fitness: 433.894->417.916
+Iteration 3: improved fitness: 417.916->411.553
+Iteration 4: improved fitness: 411.553->400.923
+Iteration 5: improved fitness: 400.923->389.61
+Iteration 6: improved fitness: 389.61->373.946
+Iteration 7: improved fitness: 373.946->364.154
+Iteration 8: improved fitness: 364.154->352.531
+Iteration 9: improved fitness: 352.531->348.972
+Iteration 10: improved fitness: 348.972->344.154
+Iteration 11: improved fitness: 344.154->330.118
+Iteration 12: improved fitness: 330.118->328.27
+Iteration 13: improved fitness: 328.27->318.871
+Iteration 14: improved fitness: 318.871->314.052
+Iteration 15: improved fitness: 314.052->311.761
+Iteration 16: improved fitness: 311.761->307.488
+Iteration 17: improved fitness: 307.488->302.709
+Iteration 18: improved fitness: 302.709->300.439
+Iteration 19: improved fitness: 300.439->294.923
+Iteration 20: improved fitness: 294.923->294.178
+Iteration 21: improved fitness: 294.178->290.703
+Iteration 22: improved fitness: 290.703->287.218
+Iteration 23: improved fitness: 287.218->285.965
+Iteration 24: improved fitness: 285.965->282.112
+Iteration 25: improved fitness: 282.112->278.853
+Iteration 27: improved fitness: 278.853->277.56
+Iteration 28: improved fitness: 277.56->275.011
+Iteration 29: improved fitness: 275.011->274.563
+Iteration 30: improved fitness: 274.563->268.075
+Iteration 31: improved fitness: 268.075->263.705
+Iteration 32: improved fitness: 263.705->257.698
+Iteration 33: improved fitness: 257.698->250.689
+Iteration 34: improved fitness: 250.689->244.914
+Iteration 35: improved fitness: 244.914->243.774
+Iteration 36: improved fitness: 243.774->242.808
+Iteration 37: improved fitness: 242.808->239.241
+Iteration 40: improved fitness: 239.241->236.055
+Iteration 41: improved fitness: 236.055->233.326
+Iteration 42: improved fitness: 233.326->231.034
+Iteration 43: improved fitness: 231.034->229.406
+Iteration 44: improved fitness: 229.406->226.149
+Iteration 45: improved fitness: 226.149->222.854
+Iteration 47: improved fitness: 222.854->218.14
+Iteration 49: improved fitness: 218.14->214.705
+Iteration 50: improved fitness: 214.705->214.456
+Iteration 51: improved fitness: 214.456->214.322
+Iteration 52: improved fitness: 214.322->213.817
+Iteration 53: improved fitness: 213.817->211.887
+Iteration 54: improved fitness: 211.887->211.752
+Iteration 55: improved fitness: 211.752->211.399
+Iteration 56: improved fitness: 211.399->209.752
+Iteration 57: improved fitness: 209.752->208.532
+Iteration 58: improved fitness: 208.532->207.409
+Iteration 60: improved fitness: 207.409->207.139
+Iteration 61: improved fitness: 207.139->206.91
+Iteration 63: improved fitness: 206.91->205.895
+Iteration 64: improved fitness: 205.895->205.698
+Iteration 65: improved fitness: 205.698->203.602
+Iteration 67: improved fitness: 203.602->203.129
+Iteration 69: improved fitness: 203.129->202.013
+Iteration 70: improved fitness: 202.013->201.229
+Iteration 71: improved fitness: 201.229->200.512
+Iteration 72: improved fitness: 200.512->199.234
+Iteration 73: improved fitness: 199.234->198.517
+Iteration 74: improved fitness: 198.517->197.088
+Iteration 75: improved fitness: 197.088->195.006
+Iteration 76: improved fitness: 195.006->193.424
+Iteration 77: improved fitness: 193.424->188.417
+Iteration 78: improved fitness: 188.417->186.453
+Iteration 81: improved fitness: 186.453->184.61
+Iteration 84: improved fitness: 184.61->183.394
+Iteration 85: improved fitness: 183.394->180.899
+Iteration 86: improved fitness: 180.899->180.026
+Iteration 87: improved fitness: 180.026->178.823
+Iteration 95: improved fitness: 178.823->177.374
+Iteration 96: improved fitness: 177.374->176.768
+Iteration 98: improved fitness: 176.768->175.357
+Iteration 101: improved fitness: 175.357->175.15
+Iteration 103: improved fitness: 175.15->174.669
+Iteration 107: improved fitness: 174.669->174.501
+Iteration 110: improved fitness: 174.501->173.73
+Iteration 111: improved fitness: 173.73->172.793
+Iteration 113: improved fitness: 172.793->172.022
+Iteration 114: improved fitness: 172.022->171.698
+Iteration 116: improved fitness: 171.698->171.014
+Iteration 119: improved fitness: 171.014->170.428
+Iteration 123: improved fitness: 170.428->170.264
+Iteration 125: improved fitness: 170.264->170.106
+Iteration 131: improved fitness: 170.106->166.494
+Iteration 132: improved fitness: 166.494->166.085
+Iteration 133: improved fitness: 166.085->164.983
+Iteration 135: improved fitness: 164.983->164.72
+Iteration 141: improved fitness: 164.72->162.399
+Iteration 143: improved fitness: 162.399->161.469
+Iteration 144: improved fitness: 161.469->160.746
+Iteration 145: improved fitness: 160.746->160.289
+Iteration 148: improved fitness: 160.289->159.264
+Iteration 155: improved fitness: 159.264->158.945
+Iteration 160: improved fitness: 158.945->154.919
+Iteration 161: improved fitness: 154.919->154.294
+Iteration 163: improved fitness: 154.294->154.294
+Iteration 165: improved fitness: 154.294->154.084
+Iteration 166: improved fitness: 154.084->153.098
+Iteration 168: improved fitness: 153.098->152.843
+Iteration 169: improved fitness: 152.843->152.229
+Iteration 170: improved fitness: 152.229->152.202
+Iteration 171: improved fitness: 152.202->151.923
+Iteration 172: improved fitness: 151.923->151.173
+Iteration 173: improved fitness: 151.173->149.391
+Iteration 174: improved fitness: 149.391->148.427
+Iteration 175: improved fitness: 148.427->147.363
+Iteration 176: improved fitness: 147.363->146.929
+Iteration 177: improved fitness: 146.929->146.315
+Iteration 178: improved fitness: 146.315->142.45
+Iteration 185: improved fitness: 142.45->141.394
+Iteration 188: improved fitness: 141.394->141.163
+Iteration 189: improved fitness: 141.163->140.247
+Iteration 191: improved fitness: 140.247->139.819
+Iteration 192: improved fitness: 139.819->139.815
+Iteration 193: improved fitness: 139.815->139.387
+Iteration 198: improved fitness: 139.387->137.834
+Iteration 199: improved fitness: 137.834->136.955
+Iteration 199: exchanging individuals. Best fitness before the exchange: 136.955
+Best individual received has fitness 127.94
+Iteration 200: improved fitness: 136.955->127.94
+Iteration 214: improved fitness: 127.94->127
+Iteration 218: improved fitness: 127->126.834
+Iteration 225: improved fitness: 126.834->126.272
+Iteration 227: improved fitness: 126.272->125.798
+Iteration 231: improved fitness: 125.798->124.207
+Iteration 233: improved fitness: 124.207->123.157
+Iteration 244: improved fitness: 123.157->122.931
+Iteration 246: improved fitness: 122.931->122.625
+Iteration 254: improved fitness: 122.625->121.888
+Iteration 257: improved fitness: 121.888->121.682
+Iteration 258: improved fitness: 121.682->120.805
+Iteration 259: improved fitness: 120.805->120.75
+Iteration 260: improved fitness: 120.75->120.716
+Iteration 261: improved fitness: 120.716->120.64
+Iteration 263: improved fitness: 120.64->120.606
+Iteration 265: improved fitness: 120.606->120.606
+Iteration 268: improved fitness: 120.606->120.55
+Iteration 269: improved fitness: 120.55->120.455
+Iteration 274: improved fitness: 120.455->119.807
+Iteration 275: improved fitness: 119.807->119.609
+Iteration 278: improved fitness: 119.609->119.234
+Iteration 286: improved fitness: 119.234->118.853
+Iteration 288: improved fitness: 118.853->118.145
+Iteration 301: improved fitness: 118.145->116.424
+Iteration 303: improved fitness: 116.424->115.694
+Iteration 304: improved fitness: 115.694->114.979
+Iteration 305: improved fitness: 114.979->114.796
+Iteration 308: improved fitness: 114.796->113.963
+Iteration 314: improved fitness: 113.963->113.322
+Iteration 318: improved fitness: 113.322->113.29
+Iteration 320: improved fitness: 113.29->113.289
+Iteration 334: improved fitness: 113.289->113.289
+Iteration 335: improved fitness: 113.289->112.716
+Iteration 337: improved fitness: 112.716->112.405
+Iteration 344: improved fitness: 112.405->112.405
+Iteration 351: improved fitness: 112.405->112.084
+Iteration 352: improved fitness: 112.084->111.885
+Iteration 356: improved fitness: 111.885->111.876
+Iteration 366: improved fitness: 111.876->111.46
+Iteration 367: improved fitness: 111.46->110.712
+Iteration 369: improved fitness: 110.712->110.668
+Iteration 370: improved fitness: 110.668->110.286
+Iteration 372: improved fitness: 110.286->110.119
+Iteration 373: improved fitness: 110.119->109.503
+Iteration 374: improved fitness: 109.503->109.173
+Iteration 375: improved fitness: 109.173->108.884
+Iteration 378: improved fitness: 108.884->108.269
+Iteration 389: improved fitness: 108.269->108.269
+Iteration 397: improved fitness: 108.269->107.891
+Iteration 399: exchanging individuals. Best fitness before the exchange: 107.891
+Best individual received has fitness 106.628
+Iteration 400: improved fitness: 107.891->106.628
+Iteration 402: improved fitness: 106.628->106.209
+Iteration 410: improved fitness: 106.209->105.55
+Iteration 412: improved fitness: 105.55->104.882
+Iteration 413: improved fitness: 104.882->104.655
+Iteration 414: improved fitness: 104.655->104.121
+Iteration 415: improved fitness: 104.121->103.465
+Iteration 416: improved fitness: 103.465->103.026
+Iteration 417: improved fitness: 103.026->102.792
+Iteration 422: improved fitness: 102.792->102.549
+Iteration 433: improved fitness: 102.549->102.1
+Iteration 434: improved fitness: 102.1->101.375
+Iteration 446: improved fitness: 101.375->100.279
+Iteration 447: improved fitness: 100.279->100.272
+Iteration 506: improved fitness: 100.272->100.162
+Iteration 510: improved fitness: 100.162->100.13
+Iteration 520: improved fitness: 100.13->98.6783
+Iteration 535: improved fitness: 98.6783->98.4586
+Iteration 539: improved fitness: 98.4586->98.0493
+Iteration 548: improved fitness: 98.0493->97.7484
+Iteration 557: improved fitness: 97.7484->97.7116
+Iteration 565: improved fitness: 97.7116->97.6167
+Iteration 568: improved fitness: 97.6167->96.5493
+Iteration 599: exchanging individuals. Best fitness before the exchange: 96.5493
+Best individual received has fitness 90.7542
+Iteration 600: improved fitness: 96.5493->90.7542
+Iteration 617: improved fitness: 90.7542->90.6422
+Iteration 637: improved fitness: 90.6422->90.6393
+Iteration 644: improved fitness: 90.6393->90.3707
+Iteration 645: improved fitness: 90.3707->90.0355
+Iteration 666: improved fitness: 90.0355->89.9987
+Iteration 699: improved fitness: 89.9987->89.824
+Iteration 701: improved fitness: 89.824->89.1961
+Iteration 702: improved fitness: 89.1961->89.0214
+Iteration 704: improved fitness: 89.0214->88.9969
+Iteration 718: improved fitness: 88.9969->88.4489
+Iteration 723: improved fitness: 88.4489->88.3029
+Iteration 724: improved fitness: 88.3029->88.2435
+Iteration 725: improved fitness: 88.2435->87.0375
+Iteration 728: improved fitness: 87.0375->86.9949
+Iteration 741: improved fitness: 86.9949->86.9702
+Iteration 743: improved fitness: 86.9702->86.8621
+Iteration 744: improved fitness: 86.8621->86.844
+Iteration 746: improved fitness: 86.844->86.4354
+Iteration 747: improved fitness: 86.4354->86.4173
+Iteration 761: improved fitness: 86.4173->86.01
+Iteration 765: improved fitness: 86.01->85.9695
+Iteration 785: improved fitness: 85.9695->85.777
+Iteration 799: exchanging individuals. Best fitness before the exchange: 85.777
+Best individual received has fitness 92.4003
+Iteration 817: improved fitness: 85.777->85.765
+Iteration 821: improved fitness: 85.765->85.1484
+Iteration 829: improved fitness: 85.1484->84.4826
+Iteration 830: improved fitness: 84.4826->83.2589
+Iteration 835: improved fitness: 83.2589->83.0712
+Iteration 868: improved fitness: 83.0712->83.014
+Iteration 892: improved fitness: 83.014->82.7713
+Iteration 910: improved fitness: 82.7713->82.5536
+Iteration 911: improved fitness: 82.5536->82.3146
+Iteration 927: improved fitness: 82.3146->81.7019
+Iteration 931: improved fitness: 81.7019->81.3262
+Iteration 935: improved fitness: 81.3262->80.5546
+Iteration 940: improved fitness: 80.5546->80.5546
+Iteration 945: improved fitness: 80.5546->80.4928
+Iteration 955: improved fitness: 80.4928->80.4659
+Iteration 977: improved fitness: 80.4659->79.9653
+Iteration 999: exchanging individuals. Best fitness before the exchange: 79.9653
+Best individual received has fitness 82.2011
+Iteration 1029: improved fitness: 79.9653->79.9261
+Iteration 1031: improved fitness: 79.9261->79.7936
+Iteration 1048: improved fitness: 79.7936->79.7388
+Iteration 1082: improved fitness: 79.7388->79.3601
+Iteration 1089: improved fitness: 79.3601->78.4734
+Iteration 1091: improved fitness: 78.4734->78.0331
+Iteration 1099: improved fitness: 78.0331->76.9085
+Iteration 1199: exchanging individuals. Best fitness before the exchange: 76.9085
+Best individual received has fitness 80.0145
+Iteration 1293: improved fitness: 76.9085->76.6699
+Iteration 1297: improved fitness: 76.6699->76.6699
+Iteration 1325: improved fitness: 76.6699->76.5064
+Iteration 1352: improved fitness: 76.5064->76.3623
+Iteration 1372: improved fitness: 76.3623->75.7222
+Iteration 1388: improved fitness: 75.7222->75.6344
+Iteration 1390: improved fitness: 75.6344->75.3132
+Iteration 1399: exchanging individuals. Best fitness before the exchange: 75.3132
+Best individual received has fitness 71.5755
+Iteration 1400: improved fitness: 75.3132->71.5755
+Iteration 1482: improved fitness: 71.5755->71.5358
+Iteration 1583: improved fitness: 71.5358->70.8794
+Iteration 1599: exchanging individuals. Best fitness before the exchange: 70.8794
+Best individual received has fitness 70.2978
+Iteration 1600: improved fitness: 70.8794->70.2978
+Iteration 1608: improved fitness: 70.2978->70.1976
+Iteration 1799: exchanging individuals. Best fitness before the exchange: 70.1976
+Best individual received has fitness 68.9962
+Iteration 1800: improved fitness: 70.1976->68.9962
+Iteration 1999: exchanging individuals. Best fitness before the exchange: 68.9962
+Best individual received has fitness 67.2526
+Iteration 2000: improved fitness: 68.9962->67.2526
+Iteration 2199: exchanging individuals. Best fitness before the exchange: 67.2526
+Best individual received has fitness 67.2526
+Iteration 2399: exchanging individuals. Best fitness before the exchange: 67.2526
+Best individual received has fitness 66.4202
+Iteration 2400: improved fitness: 67.2526->66.4202
+Iteration 2599: exchanging individuals. Best fitness before the exchange: 66.4202
+Best individual received has fitness 66.5369
+Iteration 2799: exchanging individuals. Best fitness before the exchange: 66.4202
+Best individual received has fitness 66.1328
+Iteration 2800: improved fitness: 66.4202->66.1328
+Iteration 2801: improved fitness: 66.1328->65.7339
+Iteration 2999: exchanging individuals. Best fitness before the exchange: 65.7339
+Best individual received has fitness 65.5441
+Iteration 3000: improved fitness: 65.7339->65.5441
+Iteration 3199: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.5441
+Iteration 3399: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.7339
+Iteration 3599: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.5441
+Iteration 3799: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.5441
+Iteration 3999: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.5441
+Iteration 4199: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.5441
+Iteration 4399: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.5441
+Iteration 4599: exchanging individuals. Best fitness before the exchange: 65.5441
+Best individual received has fitness 65.53
+Iteration 4600: improved fitness: 65.5441->65.53
+Iteration 4799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 4999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 5199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 5399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 5599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 5799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 5999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 6199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 6399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 6599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 6799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 6999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 7199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 7399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 7599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 7799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 7999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 8199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 8399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 8599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 8799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 8999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 9199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 9399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 9599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 9799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 9999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 10199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 10399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 10599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 10799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 10999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 11199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 11399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 11599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 11799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 11999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 12199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 12399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 12599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 12799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 12999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 13199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 13399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 13599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 13799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 13999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 14199: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 14399: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 14599: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 14799: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Iteration 14999: exchanging individuals. Best fitness before the exchange: 65.53
+Best individual received has fitness 65.53
+Exited after 15001 iterations

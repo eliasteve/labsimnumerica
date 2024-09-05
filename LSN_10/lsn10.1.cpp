@@ -9,10 +9,10 @@
 
 //Produce a solution to the travelling salesman problem using genetic search
 //(parallelized genetic algorithm + migration)
-void optimizeGeneticAlgo(std::vector<individual>&, Random&, arma::mat&, int, int, int, int, int);
+void optimizeGeneticAlgo(std::vector<individual>&, Random&, arma::mat&, int, int, int, int, int, std::string, std::string);
 //Run a genetic algorithm in order to find the solution to the travelling
 //salesman problem
-void optimizeGeneticAlgoNoMigr(std::vector<individual>&, Random&, arma::mat&, int, int, int, int);
+void optimizeGeneticAlgoNoMigr(std::vector<individual>&, Random&, arma::mat&, int, int, int, int, std::string, std::string);
 //Generate an exchange list for migration of individuals in genetic search
 arma::uvec generateExchangeList(int, int);
 //Perform migration while running a genetic search
@@ -30,15 +30,14 @@ int main(int argc, char* argv[]) {
   MPI_Comm_size(MPI_COMM_WORLD, &size);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-  //Need to use different seeds on each node, otherwise we just run the same
-  //calculation on all nodes.
-  Random rng("../random/seed.in", "../random/primes32001.in", 1+2*size+rank);
-  arma::arma_rng::set_seed(2*size+rank); //For population generation and some mutation
+  //Need to use different seeds (or primes in the case of our rng) on each
+  //node, otherwise we just run the same calculation on all nodes.
+  Random rng("../random/seed.in", "../random/primes32001.in", 1+rank);
+  arma::arma_rng::set_seed(rank); //For population generation and some mutation
 
   int nCities = 110, populationSize = 100;
   arma::mat cities(nCities, 2), distanceLUT(nCities, nCities);
   std::vector<individual> population(populationSize);
-  std::string title = "best_path_GA_node" + std::to_string(rank) + ".dat";
   individual bestIndividual;
 
   //Initialize city positions
@@ -69,18 +68,26 @@ int main(int argc, char* argv[]) {
     population[i].fitness = computeFitness(population[i], distanceLUT);
   }
 
+  /*
+  if (rank == 0) {
+    //So the best individual is at the beginning
+    sortPopulation(population);
+    writeIndividual(population[0], "best_initial_individual.dat");
+  }
+  */
+
   //Copy initial population so we can compare the results of the search with and without migration
   std::vector<individual> populationCopy(population);
 
 
   //Search with migration
-  optimizeGeneticAlgo(populationCopy, rng, distanceLUT, 200000, 10000, 50, size, rank);
+  optimizeGeneticAlgo(populationCopy, rng, distanceLUT, 200000, 10000, 50, size, rank, "", "");
   bestIndividual = bestOverallIndividual(populationCopy, size, rank);
   if (rank==0) writeIndividual(bestIndividual, "best_individual.dat");
 
 
   //Search without migration
-  optimizeGeneticAlgoNoMigr(population, rng, distanceLUT, 200000, 10000, size, rank);
+  optimizeGeneticAlgoNoMigr(population, rng, distanceLUT, 200000, 10000, size, rank, "", "");
   bestIndividual = bestOverallIndividual(population, size, rank);
   if (rank==0) writeIndividual(bestIndividual, "best_individual_nomigr.dat");
   
@@ -104,7 +111,13 @@ void optimizeGeneticAlgo(
   int migrationPeriod,
   //MPI parameters
   int size, //Number of nodes
-  int rank //Label of node
+  int rank, //Label of node
+  //Filename for saving the mean fitness of the best half of paths. Empty
+  //string disables saving
+  std::string filenameMean, 
+  //Filename for saving the best fitness per iteration. Empty string 
+  //disables saving
+  std::string filenameBest
 ) {
   //Will store the best fitness of the current iteration
   double bestFitness = 0; 
@@ -124,17 +137,50 @@ void optimizeGeneticAlgo(
   //Counts how many iterations have passed without an improvement in fitness
   int timesUnchanged = 0;
 
+  double pCrossover = 0.90; //Probability of crossover
+  double pPairPerm = 0.1; //Probability of pair permutation
+  double pShift = 0.1; //Probability of shift
+  double pPermRanges = 0.1; //Probability of permutation of ranges
+  double pInv = 0.1; //Probability of inversion
+
+  //Mean standard deviation of the fitness of the best half of paths
+  double mean = 0, std = 0;
+  //File for saving the mean, standard deviation of the fitness of the best
+  //half of paths
+  std::ofstream outfMean;
+  //File for saving the best fitness at each iteration
+  std::ofstream outfBest;
+
   //Output file for the node (for legibility, so the nodes don't all try to
   //write to stdout).
   std::ofstream outf("node" + std::to_string(rank) + "_output.txt");
-  //Output file for debigging the cose for synchronized exit
+  //Output file for debugging the cose for synchronized exit
   //std::ofstream debugExit("exitlog_node" + std::to_string(rank));
 
-  if (rank == 0) writeIndividual(population[0], "best_initial_individual.dat");
+  if (filenameMean != "") {
+    outfMean.open(filenameMean + "_node" + std::to_string(rank) + ".dat");
+    if (!outfMean.is_open()) {
+      std::cerr << "Unable to open file " + filenameMean + ", statistics of the best half will NOT be written." << std::endl;
+    }
+    outfMean << "Iteration Mean StdDeviation" << std::endl;
+  }
+
+  if (filenameBest != "") {
+    outfBest.open(filenameBest + "_node" + std::to_string(rank) + ".dat");
+    if (!outfBest.is_open()) {
+      std::cerr << "Unable to open file " + filenameBest + ", fitness of best individual per iteration will NOT be written." << std::endl;
+    }
+    outfBest << "Iteration Best" << std::endl;
+  }
+
+  //Optimization cycle
+
   for (i = 0; (i < nSteps) && !exit; i++) {
-    population = geneticAlgoIteration(population, rng, distanceLUT);
+    population = geneticAlgoIteration(population, rng, distanceLUT, pPairPerm, pShift, pPermRanges, pInv, pCrossover);
 
     //Migration
+    //Use i % migrationPeriod == migrationPeriod-1 instead of ==0 so that
+    //the 1st exchange doesn't happen on the 1st iteration
     if(i % migrationPeriod == migrationPeriod-1) {
       outf << "Iteration " << i << ": exchanging individuals. Best fitness before the exchange: ";
       outf << sortPopulation(population) << std::endl;
@@ -145,13 +191,22 @@ void optimizeGeneticAlgo(
     bestFitness = sortPopulation(population);
     //outf << "best " << bestFitness << ", prev " << bestFitnessPrev << std::endl;
 
+    //Saving of best fitness and statistics of the best half
+    if(filenameMean != "") {
+      computeStatisticsOfBestHalf(population, mean, std);
+      outfMean << i+1 << " " << mean << " " << std << std::endl;
+    }
+    if(filenameBest != "") {
+      outfBest << i+1 << " " << bestFitness << std::endl;
+    }
+
     //Synchronized exit code
     if(!(bestFitness < bestFitnessPrev)) {
       timesUnchanged++;
     }
     else {
       timesUnchanged = 0;
-      outf << "Iteration " << i << ": improved fitness: " << bestFitnessPrev << "->" << bestFitness << std::endl;
+      outf << "Iteration " << i+1 << ": improved fitness: " << bestFitnessPrev << "->" << bestFitness << std::endl;
       bestFitnessPrev = bestFitness;
     }
     wantToExit = (timesUnchanged > maxTimesUnchanged);
@@ -160,7 +215,11 @@ void optimizeGeneticAlgo(
     MPI_Allreduce(&wantToExit, &exit, 1, MPI_C_BOOL, MPI_LAND, MPI_COMM_WORLD);
     //debugExit << "Iteration " << i << ": wantToExit is " << wantToExit << ", exit is " << exit << std::endl;
   }
+
   outf << "Exited after " << i << " iterations" << std::endl;
+
+  if(filenameMean != "") outfMean.close();
+  if(filenameBest != "") outfBest.close();
   outf.close();
   //debugExit.close();
 }
@@ -180,7 +239,13 @@ void optimizeGeneticAlgoNoMigr(
   //Filename for saving the mean fitness of the best half of paths. Empty
   //string disables saving
   int size, //Number of nodes
-  int rank //Label of node
+  int rank, //Label of node
+  //Filename for saving the mean fitness of the best half of paths. Empty
+  //string disables saving
+  std::string filenameMean, 
+  //Filename for saving the best fitness per iteration. Empty string 
+  //disables saving
+  std::string filenameBest
 ) {
   //Will store the best fitness of the current iteration
   double bestFitness = 0; 
@@ -193,12 +258,55 @@ void optimizeGeneticAlgoNoMigr(
   int timesUnchanged = 0;
   //Output file for the node (for legibility, so the nodes don't all try to
   //write to stdout).
-  std::ofstream outf("node" + std::to_string(rank) + "_output_NM.txt");
+  std::ofstream outf("node" + std::to_string(rank) + "_output_nomigr.txt");
 
-  if (rank == 0) writeIndividual(population[0], "best_initial_individual_NM.dat");
+  double pCrossover = 0.90; //Probability of crossover
+  double pPairPerm = 0.1; //Probability of pair permutation
+  double pShift = 0.1; //Probability of shift
+  double pPermRanges = 0.1; //Probability of permutation of ranges
+  double pInv = 0.1; //Probability of inversion
+
+  //Mean standard deviation of the fitness of the best half of paths
+  double mean = 0, std = 0;
+  //File for saving the mean, standard deviation of the fitness of the best
+  //half of paths
+  std::ofstream outfMean;
+  //File for saving the best fitness at each iteration
+  std::ofstream outfBest;
+
+  //Output file for debugging the cose for synchronized exit
+  //std::ofstream debugExit("exitlog_node" + std::to_string(rank));
+
+  if (filenameMean != "") {
+    outfMean.open(filenameMean + "_node" + std::to_string(rank) + "_nomigr.dat");
+    if (!outfMean.is_open()) {
+      std::cerr << "Unable to open file " + filenameMean + ", statistics of the best half will NOT be written." << std::endl;
+    }
+    outfMean << "Iteration Mean StdDeviation" << std::endl;
+  }
+
+  if (filenameBest != "") {
+    outfBest.open(filenameBest + "_node" + std::to_string(rank) + "_nomigr.dat");
+    if (!outfBest.is_open()) {
+      std::cerr << "Unable to open file " + filenameBest + ", fitness of best individual per iteration will NOT be written." << std::endl;
+    }
+    outfBest << "Iteration Best" << std::endl;
+  }
+
+  //Optimization cycle
+
   for (i = 0; (i < nSteps) && (timesUnchanged < maxTimesUnchanged); i++) {
-    population = geneticAlgoIteration(population, rng, distanceLUT);
+    population = geneticAlgoIteration(population, rng, distanceLUT, pPairPerm, pShift, pPermRanges, pInv, pCrossover);
     bestFitness = sortPopulation(population);
+
+    //Saving of best fitness and statistics of the best half
+    if(filenameMean != "") {
+      computeStatisticsOfBestHalf(population, mean, std);
+      outfMean << i+1 << " " << mean << " " << std << std::endl;
+    }
+    if(filenameBest != "") {
+      outfBest << i+1 << " " << bestFitness << std::endl;
+    }
 
     //Check if there have been improvements
     if(!(bestFitness < bestFitnessPrev)) {
@@ -206,12 +314,16 @@ void optimizeGeneticAlgoNoMigr(
     }
     else {
       timesUnchanged = 0;
-      outf << "Iteration " << i << ": improved fitness: " << bestFitnessPrev << "->" << bestFitness << std::endl;
+      outf << "Iteration " << i+1 << ": improved fitness: " << bestFitnessPrev << "->" << bestFitness << std::endl;
       bestFitnessPrev = bestFitness;
     }
   }
+
   outf << "Exited after " << i << " iterations" << std::endl;
+
   outf.close();
+  if(filenameMean != "") outfMean.close();
+  if(filenameBest != "") outfBest.close();
 }
 
 
@@ -279,6 +391,7 @@ void sendIndividual(
   int rank //Label of node
 ) {
   //Comm ID is rank of sender for path, size+rank of sender for fitness
+  //Use non-blocking sends in order to avoid deadlocks.
   MPI_Isend(&ind.path[0], ind.path.n_elem, MPI_INTEGER8, toNode, rank, MPI_COMM_WORLD, &req);
   MPI_Isend(&ind.fitness, 1, MPI_REAL8, toNode, size+rank, MPI_COMM_WORLD, &req);
 }

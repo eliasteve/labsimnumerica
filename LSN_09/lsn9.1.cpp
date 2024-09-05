@@ -207,6 +207,12 @@ void optimizeGeneticAlgo(
   //File for saving the best fitness at each iteration
   std::ofstream outfBest;
 
+  double pCrossover = 0.90; //Probability of crossover
+  double pPairPerm = 0.10; //Probability of pair permutation
+  double pShift = 0.10; //Probability of shift
+  double pPermRanges = 0.10; //Probability of permutation of ranges
+  double pInv = 0.10; //Probability of inversion
+
   if (filenameMean != "") {
     outfMean.open(filenameMean);
     if (!outfMean.is_open()) {
@@ -224,7 +230,7 @@ void optimizeGeneticAlgo(
   }
 
   for (i = 0; (i < nSteps) && (timesUnchanged < maxTimesUnchanged); i++) {
-    population = geneticAlgoIteration(population, rng, distanceLUT);
+    population = geneticAlgoIteration(population, rng, distanceLUT, pPairPerm, pShift, pPermRanges, pInv, pCrossover);
     bestFitness = sortPopulation(population);
     //Saving of best fitness and statistics of the best half
     if(filenameMean != "") {
