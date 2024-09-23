@@ -790,7 +790,7 @@ void System :: check_property_dependences() {
 
   //In an Ising simulation we can measure the total energy alone, but not
   //in an MD simulation.
-  if (_sim_type > 1) {
+  if (_sim_type < 2) {
     if (_measure_tenergy and (!_measure_kenergy or !_measure_penergy)) {
       std::cerr << "Warning: attempting to measure the total energy without measuring the potential or kinetic energy. The simulation still runs but the measurement of the total energy has undefined behaviour." << std::endl;
       coutf << "Warning: attempting to measure the total energy without measuring the potential or kinetic energy. The simulation still runs but the measurement of the total energy has undefined behaviour." << std::endl;
