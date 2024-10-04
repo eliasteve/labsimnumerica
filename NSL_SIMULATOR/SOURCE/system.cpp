@@ -155,6 +155,7 @@ void System :: initialize(){ // Initialize the System object according to the co
   coutf.open("../OUTPUT/output.dat");
   string property;
   double delta;
+  int tmp;
   while ( !input.eof() ){
     input >> property;
     if( property == "SIMULATION_TYPE" ){
@@ -217,6 +218,11 @@ void System :: initialize(){ // Initialize the System object according to the co
     } else if( property == "NEQSTEPS" ) {
       input >> _neqsteps;
       coutf << "NEQSTEPS= " << _neqsteps << std::endl;
+    } else if (property == "TAIL") {
+      input >> tmp;
+      if (tmp==1) {
+        _include_tail = true;
+      }
     } else if( property == "ENDINPUT" ){
       coutf << "Reading input completed!" << endl;
       break;
@@ -316,7 +322,8 @@ void System :: initialize_properties(){ // Initialize data members used for meas
         _index_penergy = index_property;
         _measure_penergy = true;
         index_property++;
-        _vtail = 0.0;//8.0*M_PI*_rho/(3.0*pow(_r_cut, 3))*(1.0/(3*pow(_r_cut, 6)) - 1.0);
+        if (_include_tail) _vtail = 8.0*M_PI*_rho/(3.0*pow(_r_cut, 3))*(1.0/(3*pow(_r_cut, 6)) - 1.0);
+        else _vtail = 0.0;
       } else if( property == "KINETIC_ENERGY" ){
         ofstream coutk("../OUTPUT/kinetic_energy.dat");
         coutk << "#     BLOCK:   ACTUAL_KE:    KE_AVE:      ERROR:" << endl;
@@ -349,7 +356,8 @@ void System :: initialize_properties(){ // Initialize data members used for meas
         _measure_pressure = true;
         _index_pressure = index_property;
         index_property++;
-        _ptail = 0.0; //32.0*M_PI*_rho/pow(_r_cut, 3)*(1.0/(9.0*pow(_r_cut, 6)) - 1.0/6.0);
+        if (_include_tail) _ptail = 64.0*M_PI*pow(_rho, 2)/pow(_r_cut, 3)*(1.0/(9.0*pow(_r_cut, 6)) - 1.0/6.0);
+        else _ptail = 0;
       } else if( property == "GOFR" ){
         //ofstream coutgr("../OUTPUT/gofr.dat");
         //coutgr << "# DISTANCE:     AVE_GOFR:        ERROR:" << endl;
@@ -561,7 +569,7 @@ void System :: measure(){ // Measure properties
         }
       }
     }
-    //Normalize histogram
+    //Normalize histogram for g(r)
     if(_measure_gofr) {
       for (int i=0; i<_n_bins; i++) {
         _measurement(_index_gofr + i) /= (4*M_PI/3) * ( pow((i+1)*_bin_size, 3) - pow(i*_bin_size, 3) ) * _rho * _npart;
@@ -596,7 +604,7 @@ void System :: measure(){ // Measure properties
   if (_measure_temp and _measure_kenergy) _measurement(_index_temp) = (2.0/3.0) * kenergy_temp;
   // PRESSURE //////////////////////////////////////////////////////////////////
   if (_measure_temp and _measure_kenergy and _measure_pressure) {
-    _measurement(_index_pressure) = _rho * _measurement(_index_temp) + 48./(3.*_volume)*virial;
+    _measurement(_index_pressure) = _ptail + _rho * _measurement(_index_temp) + 48./(3.*_volume)*virial;
   }
   // MAGNETIZATION /////////////////////////////////////////////////////////////
   if (_measure_magnet or _measure_chi) {

@@ -52,7 +52,7 @@ int throwNeedle(Random& rng, double L, double d) {
   double norm;
 
   //Select an angle uniformly between -pi and pi by sampling a point in
-  //"the first two quadrant" and keeping it only if it's inside the unit
+  //"the first two quadrants" and keeping it only if it's inside the unit
   //disk. This implementation could technically run in an infinite loop,
   //but this happens with probability zero, and is unavoidable provided
   //we always want to generate a point per function call.
