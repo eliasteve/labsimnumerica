@@ -41,371 +41,1662 @@ Iteration 44: improved fitness: 251.941->246.964
 Iteration 45: improved fitness: 246.964->245.272
 Iteration 48: improved fitness: 245.272->242.662
 Iteration 49: improved fitness: 242.662->240.875
-Iteration 50: improved fitness: 240.875->238.979
-Iteration 51: improved fitness: 238.979->235.907
-Iteration 52: improved fitness: 235.907->234.011
-Iteration 53: improved fitness: 234.011->232.267
-Iteration 54: improved fitness: 232.267->227.471
-Iteration 55: improved fitness: 227.471->226.557
-Iteration 56: improved fitness: 226.557->225.972
-Iteration 57: improved fitness: 225.972->224.722
-Iteration 59: improved fitness: 224.722->222.7
-Iteration 60: improved fitness: 222.7->222.622
-Iteration 61: improved fitness: 222.622->221.076
-Iteration 62: improved fitness: 221.076->220.998
-Iteration 63: improved fitness: 220.998->219.936
-Iteration 64: improved fitness: 219.936->219.446
-Iteration 65: improved fitness: 219.446->217.185
-Iteration 66: improved fitness: 217.185->215.923
-Iteration 67: improved fitness: 215.923->213.242
-Iteration 68: improved fitness: 213.242->209.56
-Iteration 71: improved fitness: 209.56->208.006
-Iteration 72: improved fitness: 208.006->207.626
-Iteration 73: improved fitness: 207.626->207.378
-Iteration 74: improved fitness: 207.378->202.909
-Iteration 75: improved fitness: 202.909->199.906
-Iteration 77: improved fitness: 199.906->198.889
-Iteration 78: improved fitness: 198.889->197.787
-Iteration 80: improved fitness: 197.787->197.473
-Iteration 81: improved fitness: 197.473->195.267
-Iteration 82: improved fitness: 195.267->192.313
-Iteration 83: improved fitness: 192.313->190.807
-Iteration 84: improved fitness: 190.807->188.868
-Iteration 85: improved fitness: 188.868->186.704
-Iteration 86: improved fitness: 186.704->186.248
-Iteration 87: improved fitness: 186.248->186.086
-Iteration 89: improved fitness: 186.086->185.268
-Iteration 91: improved fitness: 185.268->184.789
-Iteration 92: improved fitness: 184.789->179.238
-Iteration 93: improved fitness: 179.238->177.736
-Iteration 94: improved fitness: 177.736->177.517
-Iteration 95: improved fitness: 177.517->176.1
-Iteration 96: improved fitness: 176.1->175.654
-Iteration 98: improved fitness: 175.654->175.417
-Iteration 100: improved fitness: 175.417->174.194
-Iteration 101: improved fitness: 174.194->173.645
-Iteration 102: improved fitness: 173.645->168.905
-Iteration 103: improved fitness: 168.905->165.291
-Iteration 104: improved fitness: 165.291->164.976
-Iteration 105: improved fitness: 164.976->163.719
-Iteration 106: improved fitness: 163.719->162.774
-Iteration 107: improved fitness: 162.774->162.335
-Iteration 109: improved fitness: 162.335->162.117
-Iteration 112: improved fitness: 162.117->161.884
-Iteration 113: improved fitness: 161.884->161.104
-Iteration 119: improved fitness: 161.104->160.662
-Iteration 120: improved fitness: 160.662->157.849
-Iteration 121: improved fitness: 157.849->157.075
-Iteration 123: improved fitness: 157.075->156.758
-Iteration 124: improved fitness: 156.758->156.7
-Iteration 126: improved fitness: 156.7->156.367
-Iteration 127: improved fitness: 156.367->155.603
-Iteration 128: improved fitness: 155.603->153.934
-Iteration 133: improved fitness: 153.934->153.272
-Iteration 134: improved fitness: 153.272->152.61
-Iteration 136: improved fitness: 152.61->151.873
-Iteration 137: improved fitness: 151.873->151.608
-Iteration 138: improved fitness: 151.608->150.706
-Iteration 141: improved fitness: 150.706->149.88
-Iteration 143: improved fitness: 149.88->149.012
-Iteration 145: improved fitness: 149.012->146.259
-Iteration 147: improved fitness: 146.259->145.541
-Iteration 148: improved fitness: 145.541->145.375
-Iteration 150: improved fitness: 145.375->143.948
-Iteration 154: improved fitness: 143.948->142.191
-Iteration 171: improved fitness: 142.191->139.201
-Iteration 172: improved fitness: 139.201->138.747
-Iteration 173: improved fitness: 138.747->138.069
-Iteration 174: improved fitness: 138.069->137.97
-Iteration 175: improved fitness: 137.97->137.568
-Iteration 177: improved fitness: 137.568->137.361
-Iteration 178: improved fitness: 137.361->136.713
-Iteration 179: improved fitness: 136.713->136.571
-Iteration 180: improved fitness: 136.571->136.53
-Iteration 181: improved fitness: 136.53->135.534
-Iteration 182: improved fitness: 135.534->135.386
-Iteration 183: improved fitness: 135.386->132.778
-Iteration 185: improved fitness: 132.778->131.491
-Iteration 189: improved fitness: 131.491->131.384
-Iteration 190: improved fitness: 131.384->131.121
-Iteration 192: improved fitness: 131.121->130.7
-Iteration 195: improved fitness: 130.7->130.622
-Iteration 196: improved fitness: 130.622->129.086
-Iteration 199: improved fitness: 129.086->127.774
-Iteration 199: exchanging individuals. Best fitness before the exchange: 127.642
-Best individual received has fitness 136.955
-Iteration 200: improved fitness: 127.774->127.642
-Iteration 201: improved fitness: 127.642->125.755
-Iteration 208: improved fitness: 125.755->125.464
-Iteration 210: improved fitness: 125.464->125.368
-Iteration 211: improved fitness: 125.368->124.775
-Iteration 212: improved fitness: 124.775->124.464
-Iteration 232: improved fitness: 124.464->124.287
-Iteration 234: improved fitness: 124.287->123.863
-Iteration 235: improved fitness: 123.863->123.764
-Iteration 239: improved fitness: 123.764->122.987
-Iteration 241: improved fitness: 122.987->121.696
-Iteration 245: improved fitness: 121.696->121.239
-Iteration 246: improved fitness: 121.239->121.206
-Iteration 249: improved fitness: 121.206->121.206
-Iteration 255: improved fitness: 121.206->120.841
-Iteration 260: improved fitness: 120.841->120.462
-Iteration 262: improved fitness: 120.462->119.452
-Iteration 267: improved fitness: 119.452->119.073
-Iteration 277: improved fitness: 119.073->118.815
-Iteration 279: improved fitness: 118.815->118.179
-Iteration 280: improved fitness: 118.179->117.584
-Iteration 282: improved fitness: 117.584->117.583
-Iteration 284: improved fitness: 117.583->114.262
-Iteration 287: improved fitness: 114.262->114.262
-Iteration 290: improved fitness: 114.262->113.944
-Iteration 292: improved fitness: 113.944->113.635
-Iteration 295: improved fitness: 113.635->113.231
-Iteration 305: improved fitness: 113.231->113.08
-Iteration 311: improved fitness: 113.08->113.068
-Iteration 312: improved fitness: 113.068->112.843
-Iteration 314: improved fitness: 112.843->112.831
-Iteration 316: improved fitness: 112.831->111.876
-Iteration 317: improved fitness: 111.876->111.761
-Iteration 325: improved fitness: 111.761->111.072
-Iteration 331: improved fitness: 111.072->110.968
-Iteration 333: improved fitness: 110.968->110.274
-Iteration 334: improved fitness: 110.274->108.681
-Iteration 337: improved fitness: 108.681->107.62
-Iteration 355: improved fitness: 107.62->106.375
-Iteration 360: improved fitness: 106.375->106.114
-Iteration 370: improved fitness: 106.114->105.935
-Iteration 373: improved fitness: 105.935->105.816
-Iteration 374: improved fitness: 105.816->105.643
-Iteration 376: improved fitness: 105.643->104.555
-Iteration 384: improved fitness: 104.555->104.191
-Iteration 389: improved fitness: 104.191->103.835
-Iteration 394: improved fitness: 103.835->103.458
-Iteration 395: improved fitness: 103.458->102.708
-Iteration 399: exchanging individuals. Best fitness before the exchange: 102.708
-Best individual received has fitness 102.293
-Iteration 400: improved fitness: 102.708->102.293
-Iteration 401: improved fitness: 102.293->100.505
-Iteration 402: improved fitness: 100.505->99.9281
-Iteration 404: improved fitness: 99.9281->99.8407
-Iteration 408: improved fitness: 99.8407->99.3994
-Iteration 410: improved fitness: 99.3994->99.1305
-Iteration 413: improved fitness: 99.1305->99.0716
-Iteration 425: improved fitness: 99.0716->98.6558
-Iteration 426: improved fitness: 98.6558->97.5027
-Iteration 427: improved fitness: 97.5027->97.0869
-Iteration 440: improved fitness: 97.0869->95.9812
-Iteration 465: improved fitness: 95.9812->95.8587
-Iteration 466: improved fitness: 95.8587->95.7087
-Iteration 467: improved fitness: 95.7087->95.4183
-Iteration 468: improved fitness: 95.4183->95.2958
-Iteration 471: improved fitness: 95.2958->94.9497
-Iteration 501: improved fitness: 94.9497->94.9313
-Iteration 503: improved fitness: 94.9313->94.6393
-Iteration 504: improved fitness: 94.6393->93.9705
-Iteration 512: improved fitness: 93.9705->93.8304
-Iteration 513: improved fitness: 93.8304->93.566
-Iteration 522: improved fitness: 93.566->92.72
-Iteration 530: improved fitness: 92.72->91.9435
-Iteration 546: improved fitness: 91.9435->91.7558
-Iteration 562: improved fitness: 91.7558->91.1197
-Iteration 568: improved fitness: 91.1197->90.9778
-Iteration 585: improved fitness: 90.9778->90.7542
-Iteration 599: exchanging individuals. Best fitness before the exchange: 90.7542
-Best individual received has fitness 94.1927
-Iteration 604: improved fitness: 90.7542->89.2726
-Iteration 606: improved fitness: 89.2726->89.232
-Iteration 617: improved fitness: 89.232->88.5919
-Iteration 630: improved fitness: 88.5919->88.5919
-Iteration 636: improved fitness: 88.5919->88.343
-Iteration 638: improved fitness: 88.343->88.343
-Iteration 641: improved fitness: 88.343->88.0096
-Iteration 644: improved fitness: 88.0096->86.4974
-Iteration 677: improved fitness: 86.4974->86.1933
-Iteration 684: improved fitness: 86.1933->86.0017
-Iteration 696: improved fitness: 86.0017->85.5687
-Iteration 711: improved fitness: 85.5687->85.1028
-Iteration 712: improved fitness: 85.1028->84.9314
-Iteration 727: improved fitness: 84.9314->84.8862
-Iteration 758: improved fitness: 84.8862->84.602
-Iteration 759: improved fitness: 84.602->84.5144
-Iteration 760: improved fitness: 84.5144->84.1149
-Iteration 781: improved fitness: 84.1149->84.094
-Iteration 783: improved fitness: 84.094->83.3253
-Iteration 790: improved fitness: 83.3253->82.9471
-Iteration 799: exchanging individuals. Best fitness before the exchange: 82.9471
-Best individual received has fitness 78.0405
-Iteration 800: improved fitness: 82.9471->78.0405
-Iteration 823: improved fitness: 78.0405->78.0405
-Iteration 878: improved fitness: 78.0405->77.7461
-Iteration 879: improved fitness: 77.7461->77.6376
-Iteration 881: improved fitness: 77.6376->76.5383
-Iteration 944: improved fitness: 76.5383->76.5374
-Iteration 945: improved fitness: 76.5374->75.7024
-Iteration 957: improved fitness: 75.7024->75.4962
-Iteration 969: improved fitness: 75.4962->75.0973
-Iteration 994: improved fitness: 75.0973->74.583
-Iteration 999: exchanging individuals. Best fitness before the exchange: 74.583
-Best individual received has fitness 78.962
-Iteration 1002: improved fitness: 74.583->74.583
-Iteration 1031: improved fitness: 74.583->73.9075
-Iteration 1038: improved fitness: 73.9075->73.9075
-Iteration 1128: improved fitness: 73.9075->73.8099
-Iteration 1148: improved fitness: 73.8099->72.5446
-Iteration 1176: improved fitness: 72.5446->72.1529
-Iteration 1199: exchanging individuals. Best fitness before the exchange: 72.1529
-Best individual received has fitness 74.443
-Iteration 1202: improved fitness: 72.1529->71.9877
-Iteration 1218: improved fitness: 71.9877->71.9459
-Iteration 1277: improved fitness: 71.9459->71.4132
-Iteration 1278: improved fitness: 71.4132->70.833
-Iteration 1399: exchanging individuals. Best fitness before the exchange: 70.833
-Best individual received has fitness 68.7173
-Iteration 1400: improved fitness: 70.833->68.7173
-Iteration 1485: improved fitness: 68.7173->68.3403
-Iteration 1599: exchanging individuals. Best fitness before the exchange: 68.3403
-Best individual received has fitness 67.5541
-Iteration 1600: improved fitness: 68.3403->67.5541
-Iteration 1682: improved fitness: 67.5541->67.4741
-Iteration 1799: exchanging individuals. Best fitness before the exchange: 67.4741
-Best individual received has fitness 69.0996
-Iteration 1999: exchanging individuals. Best fitness before the exchange: 67.4741
-Best individual received has fitness 68.9962
-Iteration 2199: exchanging individuals. Best fitness before the exchange: 67.4741
-Best individual received has fitness 66.819
-Iteration 2200: improved fitness: 67.4741->66.819
-Iteration 2356: improved fitness: 66.819->66.4202
-Iteration 2399: exchanging individuals. Best fitness before the exchange: 66.4202
-Best individual received has fitness 67.2526
-Iteration 2599: exchanging individuals. Best fitness before the exchange: 66.4202
-Best individual received has fitness 66.819
-Iteration 2799: exchanging individuals. Best fitness before the exchange: 66.4202
-Best individual received has fitness 66.5369
-Iteration 2999: exchanging individuals. Best fitness before the exchange: 66.4202
-Best individual received has fitness 66.1476
-Iteration 3000: improved fitness: 66.4202->66.1476
-Iteration 3001: improved fitness: 66.1476->65.7487
-Iteration 3199: exchanging individuals. Best fitness before the exchange: 65.7487
-Best individual received has fitness 65.7339
-Iteration 3200: improved fitness: 65.7487->65.7339
-Iteration 3399: exchanging individuals. Best fitness before the exchange: 65.7339
-Best individual received has fitness 65.5441
-Iteration 3400: improved fitness: 65.7339->65.5441
-Iteration 3599: exchanging individuals. Best fitness before the exchange: 65.5441
-Best individual received has fitness 65.7339
-Iteration 3799: exchanging individuals. Best fitness before the exchange: 65.5441
-Best individual received has fitness 65.5441
-Iteration 3999: exchanging individuals. Best fitness before the exchange: 65.5441
-Best individual received has fitness 65.5441
-Iteration 4041: improved fitness: 65.5441->65.53
-Iteration 4199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.5441
-Iteration 4399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.5441
-Iteration 4599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 4799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.5441
-Iteration 4999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 5199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 5399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 5599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 5799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 5999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 6199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 6399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 6599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 6799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 6999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 7199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 7399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 7599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 7799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 7999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 8199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 8399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 8599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 8799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 8999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 9199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 9399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 9599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 9799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 9999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 10199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 10399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 10599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 10799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 10999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 11199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 11399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 11599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 11799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 11999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 12199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 12399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 12599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 12799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 12999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 13199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 13399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 13599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 13799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 13999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 14199: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 14399: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 14599: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 14799: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Iteration 14999: exchanging individuals. Best fitness before the exchange: 65.53
-Best individual received has fitness 65.53
-Exited after 15001 iterations
+Iteration 49: exchanging individuals. Best fitness before the exchange: 238.979
+Best individual received has fitness 218.345
+Iteration 50: improved fitness: 240.875->218.345
+Iteration 51: improved fitness: 218.345->211.772
+Iteration 52: improved fitness: 211.772->211.567
+Iteration 53: improved fitness: 211.567->209.947
+Iteration 55: improved fitness: 209.947->209.633
+Iteration 56: improved fitness: 209.633->209.339
+Iteration 57: improved fitness: 209.339->207.116
+Iteration 58: improved fitness: 207.116->205.225
+Iteration 60: improved fitness: 205.225->205.142
+Iteration 61: improved fitness: 205.142->202.654
+Iteration 62: improved fitness: 202.654->201.314
+Iteration 64: improved fitness: 201.314->199.603
+Iteration 66: improved fitness: 199.603->199.226
+Iteration 67: improved fitness: 199.226->198.596
+Iteration 71: improved fitness: 198.596->198.401
+Iteration 72: improved fitness: 198.401->197.895
+Iteration 73: improved fitness: 197.895->197.052
+Iteration 74: improved fitness: 197.052->196.38
+Iteration 75: improved fitness: 196.38->195.537
+Iteration 76: improved fitness: 195.537->195.119
+Iteration 77: improved fitness: 195.119->192.821
+Iteration 79: improved fitness: 192.821->189.35
+Iteration 80: improved fitness: 189.35->185.903
+Iteration 83: improved fitness: 185.903->185.783
+Iteration 84: improved fitness: 185.783->184.485
+Iteration 85: improved fitness: 184.485->182.511
+Iteration 86: improved fitness: 182.511->182.353
+Iteration 87: improved fitness: 182.353->180.378
+Iteration 91: improved fitness: 180.378->179.311
+Iteration 92: improved fitness: 179.311->177.96
+Iteration 93: improved fitness: 177.96->173.987
+Iteration 94: improved fitness: 173.987->171.734
+Iteration 99: improved fitness: 171.734->170.65
+Iteration 99: exchanging individuals. Best fitness before the exchange: 170.65
+Best individual received has fitness 174.754
+Iteration 101: improved fitness: 170.65->169.932
+Iteration 102: improved fitness: 169.932->169.905
+Iteration 103: improved fitness: 169.905->169.694
+Iteration 104: improved fitness: 169.694->168.58
+Iteration 105: improved fitness: 168.58->167.888
+Iteration 106: improved fitness: 167.888->167.742
+Iteration 107: improved fitness: 167.742->167.149
+Iteration 109: improved fitness: 167.149->166.25
+Iteration 111: improved fitness: 166.25->165.933
+Iteration 113: improved fitness: 165.933->165.73
+Iteration 114: improved fitness: 165.73->165.606
+Iteration 115: improved fitness: 165.606->165.533
+Iteration 116: improved fitness: 165.533->165.223
+Iteration 117: improved fitness: 165.223->163.815
+Iteration 119: improved fitness: 163.815->162.578
+Iteration 120: improved fitness: 162.578->161.724
+Iteration 123: improved fitness: 161.724->161.335
+Iteration 124: improved fitness: 161.335->159.712
+Iteration 128: improved fitness: 159.712->157.955
+Iteration 129: improved fitness: 157.955->157.163
+Iteration 133: improved fitness: 157.163->156.884
+Iteration 135: improved fitness: 156.884->155.497
+Iteration 137: improved fitness: 155.497->154.462
+Iteration 140: improved fitness: 154.462->152.99
+Iteration 141: improved fitness: 152.99->151.962
+Iteration 148: improved fitness: 151.962->151.718
+Iteration 149: exchanging individuals. Best fitness before the exchange: 151.718
+Best individual received has fitness 136.841
+Iteration 150: improved fitness: 151.718->136.841
+Iteration 152: improved fitness: 136.841->136.569
+Iteration 157: improved fitness: 136.569->136.126
+Iteration 158: improved fitness: 136.126->135.115
+Iteration 160: improved fitness: 135.115->133.746
+Iteration 161: improved fitness: 133.746->133.736
+Iteration 164: improved fitness: 133.736->133
+Iteration 165: improved fitness: 133->132.689
+Iteration 166: improved fitness: 132.689->131.388
+Iteration 167: improved fitness: 131.388->131.023
+Iteration 168: improved fitness: 131.023->130.459
+Iteration 169: improved fitness: 130.459->129.593
+Iteration 170: improved fitness: 129.593->129.47
+Iteration 175: improved fitness: 129.47->127.1
+Iteration 177: improved fitness: 127.1->127.016
+Iteration 179: improved fitness: 127.016->126.713
+Iteration 183: improved fitness: 126.713->125.634
+Iteration 184: improved fitness: 125.634->125.403
+Iteration 187: improved fitness: 125.403->122.405
+Iteration 199: improved fitness: 122.405->121.285
+Iteration 199: exchanging individuals. Best fitness before the exchange: 120.382
+Best individual received has fitness 120.992
+Iteration 200: improved fitness: 121.285->120.382
+Iteration 204: improved fitness: 120.382->120.102
+Iteration 205: improved fitness: 120.102->120.042
+Iteration 206: improved fitness: 120.042->119.216
+Iteration 207: improved fitness: 119.216->118.546
+Iteration 210: improved fitness: 118.546->118.33
+Iteration 211: improved fitness: 118.33->118.293
+Iteration 223: improved fitness: 118.293->118.293
+Iteration 239: improved fitness: 118.293->117.266
+Iteration 242: improved fitness: 117.266->117.161
+Iteration 244: improved fitness: 117.161->116.427
+Iteration 248: improved fitness: 116.427->115.948
+Iteration 249: exchanging individuals. Best fitness before the exchange: 115.948
+Best individual received has fitness 113.118
+Iteration 250: improved fitness: 115.948->113.118
+Iteration 251: improved fitness: 113.118->112.13
+Iteration 252: improved fitness: 112.13->112.034
+Iteration 258: improved fitness: 112.034->110.583
+Iteration 263: improved fitness: 110.583->110.573
+Iteration 266: improved fitness: 110.573->110.307
+Iteration 271: improved fitness: 110.307->109.706
+Iteration 274: improved fitness: 109.706->109.045
+Iteration 282: improved fitness: 109.045->108.964
+Iteration 297: improved fitness: 108.964->108.809
+Iteration 299: improved fitness: 108.809->108.761
+Iteration 299: exchanging individuals. Best fitness before the exchange: 108.29
+Best individual received has fitness 100.691
+Iteration 300: improved fitness: 108.761->100.691
+Iteration 301: improved fitness: 100.691->100.172
+Iteration 309: improved fitness: 100.172->99.5537
+Iteration 311: improved fitness: 99.5537->99.4436
+Iteration 326: improved fitness: 99.4436->99.3053
+Iteration 327: improved fitness: 99.3053->97.3789
+Iteration 337: improved fitness: 97.3789->96.76
+Iteration 341: improved fitness: 96.76->96.4483
+Iteration 348: improved fitness: 96.4483->96.3032
+Iteration 349: improved fitness: 96.3032->95.3637
+Iteration 349: exchanging individuals. Best fitness before the exchange: 95.3637
+Best individual received has fitness 98.0143
+Iteration 351: improved fitness: 95.3637->94.2487
+Iteration 353: improved fitness: 94.2487->93.9214
+Iteration 378: improved fitness: 93.9214->93.3953
+Iteration 379: improved fitness: 93.3953->92.9517
+Iteration 385: improved fitness: 92.9517->92.311
+Iteration 386: improved fitness: 92.311->92.2577
+Iteration 399: improved fitness: 92.2577->92.247
+Iteration 399: exchanging individuals. Best fitness before the exchange: 92.247
+Best individual received has fitness 91.9527
+Iteration 400: improved fitness: 92.247->91.9527
+Iteration 401: improved fitness: 91.9527->90.1889
+Iteration 402: improved fitness: 90.1889->88.7282
+Iteration 409: improved fitness: 88.7282->88.3707
+Iteration 412: improved fitness: 88.3707->87.7853
+Iteration 425: improved fitness: 87.7853->87.496
+Iteration 434: improved fitness: 87.496->86.6945
+Iteration 449: improved fitness: 86.6945->86.3432
+Iteration 449: exchanging individuals. Best fitness before the exchange: 86.3432
+Best individual received has fitness 86.9327
+Iteration 488: improved fitness: 86.3432->86.2901
+Iteration 498: improved fitness: 86.2901->86.0011
+Iteration 499: exchanging individuals. Best fitness before the exchange: 86.0011
+Best individual received has fitness 84.0617
+Iteration 500: improved fitness: 86.0011->84.0617
+Iteration 502: improved fitness: 84.0617->84.0436
+Iteration 545: improved fitness: 84.0436->83.9098
+Iteration 548: improved fitness: 83.9098->83.9098
+Iteration 549: exchanging individuals. Best fitness before the exchange: 83.9098
+Best individual received has fitness 83.3006
+Iteration 550: improved fitness: 83.9098->83.3006
+Iteration 553: improved fitness: 83.3006->83.1244
+Iteration 561: improved fitness: 83.1244->82.9225
+Iteration 562: improved fitness: 82.9225->81.7803
+Iteration 563: improved fitness: 81.7803->81.457
+Iteration 565: improved fitness: 81.457->81.0638
+Iteration 566: improved fitness: 81.0638->80.9845
+Iteration 567: improved fitness: 80.9845->80.7236
+Iteration 570: improved fitness: 80.7236->80.683
+Iteration 580: improved fitness: 80.683->80.5501
+Iteration 590: improved fitness: 80.5501->79.922
+Iteration 599: exchanging individuals. Best fitness before the exchange: 79.922
+Best individual received has fitness 79.4157
+Iteration 600: improved fitness: 79.922->79.4157
+Iteration 602: improved fitness: 79.4157->79.2008
+Iteration 605: improved fitness: 79.2008->78.8983
+Iteration 648: improved fitness: 78.8983->78.7825
+Iteration 649: improved fitness: 78.7825->78.6799
+Iteration 649: exchanging individuals. Best fitness before the exchange: 78.6799
+Best individual received has fitness 79.2816
+Iteration 694: improved fitness: 78.6799->78.5895
+Iteration 699: exchanging individuals. Best fitness before the exchange: 78.5895
+Best individual received has fitness 76.21
+Iteration 700: improved fitness: 78.5895->76.21
+Iteration 701: improved fitness: 76.21->75.6628
+Iteration 702: improved fitness: 75.6628->75.1126
+Iteration 705: improved fitness: 75.1126->74.9754
+Iteration 706: improved fitness: 74.9754->74.8923
+Iteration 714: improved fitness: 74.8923->74.8349
+Iteration 742: improved fitness: 74.8349->74.5739
+Iteration 749: exchanging individuals. Best fitness before the exchange: 74.5739
+Best individual received has fitness 75.9651
+Iteration 753: improved fitness: 74.5739->73.9047
+Iteration 775: improved fitness: 73.9047->73.3101
+Iteration 777: improved fitness: 73.3101->73.2657
+Iteration 780: improved fitness: 73.2657->73.2532
+Iteration 782: improved fitness: 73.2532->73.102
+Iteration 799: exchanging individuals. Best fitness before the exchange: 73.102
+Best individual received has fitness 75.6635
+Iteration 804: improved fitness: 73.102->73.0274
+Iteration 847: improved fitness: 73.0274->73.0219
+Iteration 849: exchanging individuals. Best fitness before the exchange: 73.0219
+Best individual received has fitness 73.9698
+Iteration 876: improved fitness: 73.0219->72.859
+Iteration 899: exchanging individuals. Best fitness before the exchange: 72.859
+Best individual received has fitness 70.8845
+Iteration 900: improved fitness: 72.859->70.8845
+Iteration 902: improved fitness: 70.8845->70.879
+Iteration 949: exchanging individuals. Best fitness before the exchange: 70.879
+Best individual received has fitness 70.8529
+Iteration 950: improved fitness: 70.879->70.8529
+Iteration 951: improved fitness: 70.8529->70.8475
+Iteration 999: exchanging individuals. Best fitness before the exchange: 70.8475
+Best individual received has fitness 70.4096
+Iteration 1000: improved fitness: 70.8475->70.4096
+Iteration 1001: improved fitness: 70.4096->70.1585
+Iteration 1002: improved fitness: 70.1585->70.127
+Iteration 1049: exchanging individuals. Best fitness before the exchange: 70.127
+Best individual received has fitness 70.4096
+Iteration 1099: exchanging individuals. Best fitness before the exchange: 70.127
+Best individual received has fitness 69.6378
+Iteration 1100: improved fitness: 70.127->69.6378
+Iteration 1149: exchanging individuals. Best fitness before the exchange: 69.6378
+Best individual received has fitness 69.4843
+Iteration 1150: improved fitness: 69.6378->69.4843
+Iteration 1151: improved fitness: 69.4843->69.4305
+Iteration 1199: exchanging individuals. Best fitness before the exchange: 69.4305
+Best individual received has fitness 70.127
+Iteration 1249: exchanging individuals. Best fitness before the exchange: 69.4305
+Best individual received has fitness 69.5182
+Iteration 1251: improved fitness: 69.4305->69.3109
+Iteration 1255: improved fitness: 69.3109->69.2724
+Iteration 1263: improved fitness: 69.2724->69.2724
+Iteration 1299: exchanging individuals. Best fitness before the exchange: 69.2724
+Best individual received has fitness 69.5182
+Iteration 1320: improved fitness: 69.2724->69.2416
+Iteration 1349: exchanging individuals. Best fitness before the exchange: 69.2416
+Best individual received has fitness 69.0143
+Iteration 1350: improved fitness: 69.2416->69.0143
+Iteration 1399: exchanging individuals. Best fitness before the exchange: 69.0143
+Best individual received has fitness 69.19
+Iteration 1413: improved fitness: 69.0143->68.9885
+Iteration 1415: improved fitness: 68.9885->68.9694
+Iteration 1447: improved fitness: 68.9694->68.9076
+Iteration 1449: exchanging individuals. Best fitness before the exchange: 68.9076
+Best individual received has fitness 68.6264
+Iteration 1450: improved fitness: 68.9076->68.6264
+Iteration 1499: exchanging individuals. Best fitness before the exchange: 68.6264
+Best individual received has fitness 68.7473
+Iteration 1549: exchanging individuals. Best fitness before the exchange: 68.6264
+Best individual received has fitness 68.6264
+Iteration 1599: exchanging individuals. Best fitness before the exchange: 68.6264
+Best individual received has fitness 68.7473
+Iteration 1649: exchanging individuals. Best fitness before the exchange: 68.6264
+Best individual received has fitness 68.6264
+Iteration 1699: exchanging individuals. Best fitness before the exchange: 68.6264
+Best individual received has fitness 68.6264
+Iteration 1749: exchanging individuals. Best fitness before the exchange: 68.6264
+Best individual received has fitness 68.5633
+Iteration 1750: improved fitness: 68.6264->68.5633
+Iteration 1799: exchanging individuals. Best fitness before the exchange: 68.5633
+Best individual received has fitness 68.2286
+Iteration 1800: improved fitness: 68.5633->68.2286
+Iteration 1849: exchanging individuals. Best fitness before the exchange: 68.2286
+Best individual received has fitness 68.2286
+Iteration 1899: exchanging individuals. Best fitness before the exchange: 68.2286
+Best individual received has fitness 68.2133
+Iteration 1900: improved fitness: 68.2286->68.2133
+Iteration 1949: exchanging individuals. Best fitness before the exchange: 68.2133
+Best individual received has fitness 68.1116
+Iteration 1950: improved fitness: 68.2133->68.1116
+Iteration 1999: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2049: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2099: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2149: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2199: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2249: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2299: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2349: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2399: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2449: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2499: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2549: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2599: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2649: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2699: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2749: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2799: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2849: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2899: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2949: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 2999: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3049: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3099: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3149: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3199: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3249: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3299: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3349: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3399: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3449: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3499: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3549: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3599: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3649: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3699: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3749: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3799: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3849: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3899: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3949: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 3999: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4049: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4099: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4149: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4199: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4249: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4299: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4349: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4399: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4449: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4499: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4549: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4599: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4649: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4699: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4749: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4799: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4849: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4899: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4949: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 4999: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 5049: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 5099: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 68.1116
+Iteration 5149: exchanging individuals. Best fitness before the exchange: 68.1116
+Best individual received has fitness 67.8664
+Iteration 5150: improved fitness: 68.1116->67.8664
+Iteration 5199: exchanging individuals. Best fitness before the exchange: 67.8664
+Best individual received has fitness 67.9213
+Iteration 5202: improved fitness: 67.8664->67.8264
+Iteration 5203: improved fitness: 67.8264->67.6761
+Iteration 5249: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5299: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5349: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5399: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5449: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5499: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5549: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5599: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5649: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5699: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5749: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5799: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5849: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5899: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5949: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 5999: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6049: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6099: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6149: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6199: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6249: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6299: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6349: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6399: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6449: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6499: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6549: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6599: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6649: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6699: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6749: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6799: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6849: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6899: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6949: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 6999: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7049: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7099: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7149: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7199: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7249: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7299: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7349: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7399: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7449: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7499: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7549: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7599: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7649: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7699: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7749: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7799: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7849: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7899: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7949: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 7999: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8049: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8099: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8149: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8199: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8249: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8299: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8349: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8399: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8449: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8499: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8549: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8599: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8649: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8699: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8749: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8799: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8849: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8899: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8949: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 8999: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9049: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9099: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9149: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9199: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9249: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9299: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9349: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9399: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9449: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9499: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9549: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9599: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9649: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9699: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9749: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6761
+Iteration 9799: exchanging individuals. Best fitness before the exchange: 67.6761
+Best individual received has fitness 67.6747
+Iteration 9800: improved fitness: 67.6761->67.6747
+Iteration 9849: exchanging individuals. Best fitness before the exchange: 67.6747
+Best individual received has fitness 67.6761
+Iteration 9899: exchanging individuals. Best fitness before the exchange: 67.6747
+Best individual received has fitness 66.9853
+Iteration 9900: improved fitness: 67.6747->66.9853
+Iteration 9949: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 67.6761
+Iteration 9999: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10049: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10099: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10149: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10199: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10249: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10299: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10349: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10399: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10449: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10499: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.9853
+Iteration 10549: exchanging individuals. Best fitness before the exchange: 66.9853
+Best individual received has fitness 66.913
+Iteration 10550: improved fitness: 66.9853->66.913
+Iteration 10599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 10999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 11999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 12999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 13999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 14999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 15999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 16999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 17999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18599: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18649: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18699: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18749: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18799: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18849: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18899: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18949: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 18999: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19049: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19099: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19149: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19199: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19249: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19299: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19349: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19399: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19449: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19499: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.913
+Iteration 19549: exchanging individuals. Best fitness before the exchange: 66.913
+Best individual received has fitness 66.893
+Iteration 19550: improved fitness: 66.913->66.893
+Iteration 19599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.913
+Iteration 19649: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.913
+Iteration 19699: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 19749: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 19799: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 19849: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 19899: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 19949: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 19999: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20049: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20099: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20149: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20199: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20249: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20299: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20349: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20399: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20449: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20499: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20549: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20649: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20699: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20749: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20799: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20849: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20899: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20949: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 20999: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21049: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21099: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21149: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21199: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21249: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21299: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21349: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21399: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21449: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21499: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21549: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21649: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21699: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21749: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21799: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21849: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21899: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21949: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 21999: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22049: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22099: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22149: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22199: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22249: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22299: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22349: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22399: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22449: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22499: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22549: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22649: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22699: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22749: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22799: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22849: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22899: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22949: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 22999: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23049: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23099: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23149: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23199: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23249: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23299: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23349: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23399: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23449: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23499: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23549: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23649: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23699: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23749: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23799: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23849: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23899: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23949: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 23999: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24049: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24099: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24149: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24199: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24249: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24299: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24349: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24399: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24449: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24499: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24549: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24649: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24699: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24749: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24799: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24849: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24899: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24949: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 24999: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25049: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25099: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25149: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25199: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25249: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25299: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25349: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25399: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25449: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25499: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25549: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.893
+Iteration 25599: exchanging individuals. Best fitness before the exchange: 66.893
+Best individual received has fitness 66.7472
+Iteration 25600: improved fitness: 66.893->66.7472
+Iteration 25649: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 25699: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.893
+Iteration 25749: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 25799: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 25849: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 25899: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 25949: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 25999: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 26049: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 26099: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 26149: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 26199: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7472
+Iteration 26249: exchanging individuals. Best fitness before the exchange: 66.7472
+Best individual received has fitness 66.7207
+Iteration 26250: improved fitness: 66.7472->66.7207
+Iteration 26299: exchanging individuals. Best fitness before the exchange: 66.7207
+Best individual received has fitness 66.7472
+Iteration 26349: exchanging individuals. Best fitness before the exchange: 66.7207
+Best individual received has fitness 66.7207
+Iteration 26399: exchanging individuals. Best fitness before the exchange: 66.7207
+Best individual received has fitness 66.7207
+Iteration 26449: exchanging individuals. Best fitness before the exchange: 66.7207
+Best individual received has fitness 66.6583
+Iteration 26450: improved fitness: 66.7207->66.6583
+Iteration 26499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 26999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 27999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 28999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 29999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 30999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 31999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 32999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 33999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 34999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35549: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35599: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35649: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35699: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35749: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35799: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35849: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35899: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35949: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 35999: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36049: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36099: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36149: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36199: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36249: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36299: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36349: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36399: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36449: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Iteration 36499: exchanging individuals. Best fitness before the exchange: 66.6583
+Best individual received has fitness 66.6583
+Exited after 36501 iterations
