@@ -3,7 +3,7 @@
 Questa cartella contiene le seguenti sottocartelle:
 
 * Cartelle con nome `LSN_XX`, che contengono lo svolgimento dell'esercitazione `XX`. In particolare queste cartelle contengono:
-    * File chiamati `lsnXX.y.cpp`, con lo svolgimento dell'esercizio `XX.y`. Questi programmi si compilano con `make lsnXX.y` e si eseguono (una volta compilati) con `./lsnXX.y.out`. L'eccezione sono le cartelle per le esercitazioni 4, 6 e 7 che non contengono sorgente, visto che usano il codice in `NSL_SIMULATOR`, e che contengono invece delle cartelle con gli output delle simulazioni in vari casi, e le esercitazioni 11 e 12, che sono svolte interamente nei notebook Jupyter.
+    * File chiamati `lsnXX.y.cpp`, con lo svolgimento dell'esercizio `XX.y`. Questi programmi si compilano con `make lsnXX.y` e si eseguono (una volta compilati) con `./lsnXX.y.out` (tranne che il codice per l'esercitazione 10, che va eseguito con `mpiexec -n 11 ./lsn10.1.out`, per l'esecuzione su 11 nodi). L'eccezione sono le cartelle per le esercitazioni 4, 6 e 7 che non contengono sorgente, visto che usano il codice in `NSL_SIMULATOR`, e che contengono invece delle cartelle con gli output delle simulazioni in vari casi, e le esercitazioni 11 e 12, che sono svolte interamente nei notebook Jupyter.
     * Eventualmente file del tipo `my_lib.cpp` e `my_lib.h`, con librerie di supporto per l'esecuzione dei programmi.
     * File del tipo `my_data.dat`, che contengono i dati di output dei programmi.
     * Il Makefile e 
